@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: '3'
+
+tasks:
+  image:
+    desc: Build the Linux build container image (docker/linux-build.Dockerfile)
+    cmd: '{{.ROOT_DIR}}/scripts/in-container.sh true'

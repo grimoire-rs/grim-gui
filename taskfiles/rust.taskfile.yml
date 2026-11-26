@@ -1,0 +1,81 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: '3'
+
+# Every cargo command runs in the build container (no webkit2gtk on the host).
+# CI sets CI=true and runs cargo directly on a runner that has the packages.
+vars:
+  IN: '{{if .CI}}{{else}}{{.ROOT_DIR}}/scripts/in-container.sh {{end}}'
+
+x-shared:
+  rust-sources: &rust-sources
+    - '{{.ROOT_DIR}}/src-tauri/**/*.rs'
+    - '{{.ROOT_DIR}}/src-tauri/Cargo.toml'
+    - '{{.ROOT_DIR}}/src-tauri/build.rs'
+    - '{{.ROOT_DIR}}/src-tauri/tauri.conf.json'
+    - '{{.ROOT_DIR}}/src-tauri/capabilities/*.json'
+    - '{{.ROOT_DIR}}/Cargo.toml'
+    - '{{.ROOT_DIR}}/Cargo.lock'
+    - '{{.ROOT_DIR}}/rustfmt.toml'
+    - '{{.ROOT_DIR}}/dist/**'
+    - exclude: '{{.ROOT_DIR}}/target/**'
+
+tasks:
+  verify:
+    desc: Rust quality gate (format, clippy, license, build, unit tests)
+    cmds:
+      - task: format:check
+      - task: clippy:check
+      - task: license:deps
+      - task: build
+      - task: test:unit
+
+  format:check:
+    desc: Check Rust formatting
+    sources: *rust-sources
+    cmd: '{{.IN}}cargo fmt --all --check'
+
+  format:apply:
+    desc: Apply Rust formatting
+    cmd: '{{.IN}}cargo fmt --all'
+
+  # generate_context! reads dist/ at compile time, so clippy needs the built front end.
+  clippy:check:
+    desc: Run clippy linter
+    deps: [':web:build']
+    sources: *rust-sources
+    cmd: '{{.IN}}cargo clippy --workspace --locked --all-targets -- -D warnings'
+
+  build:
+    desc: Build the release binary (target/release/grim-gui)
+    deps: [':web:build']
+    sources: *rust-sources
+    generates:
+      - '{{.ROOT_DIR}}/target/release/grim-gui'
+    cmd: '{{.IN}}cargo build --release --locked -p grim-gui --features custom-protocol'
+
+  install:nextest:
+    internal: true
+    cmds:
+      - task: :.ensure-cargo-tool
+        vars: { TOOL: cargo-nextest, CRATE: cargo-nextest }
+
+  test:unit:
+    desc: Run unit tests
+    deps: [':web:build']
+    sources: *rust-sources
+    cmd: '{{.IN}}cargo nextest run --workspace --release --locked {{.CLI_ARGS}}'
+
+  license:check:
+    desc: Check license headers on all source files
+    cmd: ocx exec -- hawkeye check
+
+  license:deps:
+    desc: Audit dependency licenses with cargo-deny
+    cmd: ocx exec -- cargo deny check licenses
+
+  # Separate from license:deps because it needs the network (it fetches the
+  # RUSTSEC advisory DB) and can start failing on a commit that changed nothing.
+  audit:
+    desc: Check dependencies against the RUSTSEC advisory database
+    cmd: ocx exec -- cargo deny check advisories bans sources

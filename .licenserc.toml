@@ -1,0 +1,15 @@
+[header]
+text = """
+SPDX-License-Identifier: Apache-2.0
+Copyright 2026 The Grimoire Authors"""
+[files]
+includes = ["src-tauri/**/*.rs", "src/**/*.ts", "vite.config.ts"]
+
+
+[styles.slashes]
+kind = "line"
+prefix = "// "
+
+[[rules]]
+extensions = ["ts"]
+style_out = "slashes"

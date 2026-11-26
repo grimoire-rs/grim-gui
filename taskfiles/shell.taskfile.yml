@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: '3'
+
+# Installed bundle content under .claude/rules and .claude/skills is not authored
+# here, so it is not linted here (a local fix would be reverted by the next install).
+vars:
+  SHELL_FILES: "git ls-files -co --exclude-standard '*.sh' '*.bash' ':!:.claude/rules/**' ':!:.claude/skills/**'"
+
+tasks:
+  verify:
+    desc: Shell script quality gate (shellcheck + shfmt, skipped if not installed)
+    cmds:
+      - |
+        files=$({{.SHELL_FILES}} 2>/dev/null || find . -name '*.sh' -not -path './target/*' -not -path './node_modules/*')
+        [ -z "$files" ] && { echo "no shell scripts"; exit 0; }
+        if command -v shellcheck >/dev/null 2>&1; then
+          echo "$files" | xargs shellcheck
+        else
+          echo "shellcheck not installed — skipping (install: https://www.shellcheck.net)"
+        fi
+        if command -v shfmt >/dev/null 2>&1; then
+          echo "$files" | xargs shfmt -d -i 4 -ci
+        else
+          echo "shfmt not installed — skipping (install: https://github.com/mvdan/sh)"
+        fi
+
+  format:
+    desc: Format shell scripts with shfmt
+    cmds:
+      - |
+        if command -v shfmt >/dev/null 2>&1; then
+          {{.SHELL_FILES}} | xargs shfmt -w -i 4 -ci
+        else
+          echo "shfmt not installed — skipping"
+        fi

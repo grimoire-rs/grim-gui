@@ -1,0 +1,36 @@
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+target/
+dist/
+node_modules/
+src-tauri/gen/
+test/bin/
+test/results/
+test/.venv/
+.venv/
+*.log
+*.pid
+.task/
+.DS_Store
+.idea/
+.vscode/
+
+# Claude Code local files and hook runtime
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/hooks/.file-tracker.log
+.claude/hooks/.locks/
+.claude/hooks/.state/
+.claude/state/
+.claude/scheduled_tasks.lock
+.serena/
+.claude/reports/
+
+# Agent worktrees and scratch; memory, plans, adr, research and specs stay committed
+.agents/worktrees/
+.agents/.tmp/
+.agents/*.lock
+.ocx/
+.task
+lcov.info

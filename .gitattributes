@@ -1,0 +1,14 @@
+# Set default behavior to automatically normalize line endings.
+* text=auto eol=lf
+
+# Binary icon set of the Tauri template: never normalize.
+src-tauri/icons/** binary
+
+# Archives
+*.[zZ][iI][pP] binary
+*.[tT][aA][rR] binary
+*.[tT][aA][rR].[gG][zZ] binary
+*.[tT][aA][rR].[bB][zZ] binary
+*.[tT][aA][rR].[xX][zZ] binary
+
+ocx.lock merge=union

@@ -1,0 +1,43 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: '3'
+
+x-shared:
+  web-sources: &web-sources
+    - '{{.ROOT_DIR}}/index.html'
+    - '{{.ROOT_DIR}}/src/**'
+    - '{{.ROOT_DIR}}/package.json'
+    - '{{.ROOT_DIR}}/package-lock.json'
+    - '{{.ROOT_DIR}}/tsconfig.json'
+    - '{{.ROOT_DIR}}/vite.config.ts'
+
+tasks:
+  install:
+    internal: true
+    sources:
+      - '{{.ROOT_DIR}}/package-lock.json'
+    generates:
+      - '{{.ROOT_DIR}}/node_modules/.package-lock.json'
+    dir: '{{.ROOT_DIR}}'
+    cmd: ocx exec -- npm ci
+
+  lint:
+    desc: Type-check the front end
+    deps: [install]
+    dir: '{{.ROOT_DIR}}'
+    cmd: ocx exec -- npx tsc --noEmit
+
+  test:
+    desc: Run the front-end unit tests (vitest)
+    deps: [install]
+    dir: '{{.ROOT_DIR}}'
+    cmd: ocx exec -- npx vitest run
+
+  build:
+    desc: Build the front end into dist/
+    deps: [install]
+    dir: '{{.ROOT_DIR}}'
+    sources: *web-sources
+    generates:
+      - '{{.ROOT_DIR}}/dist/index.html'
+    cmd: ocx exec -- npm run build

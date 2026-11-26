@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: '3'
+
+# Runs in the build container like every cargo command (no webkit2gtk on the host).
+# The image needs cargo-llvm-cov and the llvm-tools-preview component.
+vars:
+  IN: '{{if .CI}}{{else}}{{.ROOT_DIR}}/scripts/in-container.sh {{end}}'
+
+tasks:
+  install:
+    internal: true
+    cmds:
+      - '{{.IN}}cargo install cargo-llvm-cov --locked'
+    status:
+      - '{{.IN}}cargo llvm-cov --version'
+
+  # lcov.info for editor gutters and an HTML report under target/llvm-cov/html/.
+  default:
+    desc: Run tests with LLVM coverage and generate reports.
+    deps: [':web:build', install]
+    dir: '{{.ROOT_DIR}}'
+    cmds:
+      - '{{.IN}}cargo llvm-cov --workspace --no-report --ignore-run-fail'
+      - '{{.IN}}cargo llvm-cov report --lcov --output-path lcov.info'
+      - '{{.IN}}cargo llvm-cov report --html'
