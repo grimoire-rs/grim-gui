@@ -1,0 +1,47 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+
+version: '3'
+
+vars:
+  BIN_DIR: "{{.ROOT_DIR}}/test/bin"
+  IN: '{{if .CI}}{{else}}{{.ROOT_DIR}}/scripts/in-container.sh {{end}}'
+  # The grim under test is built elsewhere (the grimoire checkout); it is copied, never run in place.
+  GRIM_SOURCE_BINARY: '{{.GRIM_SOURCE_BINARY | default (printf "%s/../.grimoire-split/target/release/grim" .ROOT_DIR)}}'
+  SHARD_LABEL: local
+
+tasks:
+  stage:
+    internal: true
+    deps: [':rust:build']
+    cmds:
+      - |
+        src='{{.GRIM_SOURCE_BINARY}}'
+        if [ ! -f "$src" ]; then
+          echo "grim binary not found at $src: set GRIM_SOURCE_BINARY to a built grim" >&2
+          exit 1
+        fi
+        mkdir -p '{{.BIN_DIR}}'
+        cp -f "$src" '{{.BIN_DIR}}/grim'
+        cp -f '{{.ROOT_DIR}}/target/release/grim-gui' '{{.BIN_DIR}}/grim-gui'
+
+  accept:
+    desc: Run the acceptance suite (starts the real app under xvfb, in the build container)
+    summary: |
+      Stages grim (GRIM_SOURCE_BINARY, default the sibling grimoire checkout's release build)
+      and the release grim-gui into test/bin/, runs pytest under dbus-run-session and
+      xvfb-run, then enforces the floor and the ceilings (test:floor).
+    deps: [stage]
+    dir: '{{.ROOT_DIR}}'
+    cmds:
+      - rm -f test/results/junit-{{.SHARD_LABEL}}-0-of-1.xml
+      - >-
+        {{.IN}}sh -c 'cd test && dbus-run-session -- xvfb-run -a
+        uv run --frozen pytest -p no:cacheprovider
+        --junit-xml=results/junit-{{.SHARD_LABEL}}-0-of-1.xml {{.CLI_ARGS | default "-v"}}'
+      - task: floor
+
+  floor:
+    desc: Judge results/junit-local-0-of-1.xml against SUITE_FLOOR, SKIP_CEILING and XFAIL_CEILING
+    dir: '{{.ROOT_DIR}}/test'
+    cmds:
+      - "{{.IN}}sh -c 'cd test && python3 tools/accept_floor.py --label {{.SHARD_LABEL}} --shard-count 1'"
