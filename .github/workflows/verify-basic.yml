@@ -1,0 +1,339 @@
+name: Basic Verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+# Superseded pushes to a feature branch stop burning runners; main never
+# cancels, so every landed commit keeps a complete result.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+env:
+  # The grimoire revision this app is built and tested against. It is also the
+  # `rev` of the grim-sdk git dependency in the root Cargo.toml: move both
+  # together. These workflows cannot run until that revision is pushed to
+  # GitHub (see subsystem-ci.md).
+  GRIM_COMMIT: eaa7da0b2683d68a7bb61489e91238d47a7ef325
+  # Tauri 2 build prerequisites on Debian and Ubuntu, plus the virtual display
+  # and software GL the acceptance suite needs.
+  LINUX_PACKAGES: >-
+    libwebkit2gtk-4.1-dev build-essential curl wget file libxdo-dev libssl-dev
+    libayatana-appindicator3-dev librsvg2-dev xvfb xauth dbus-x11 libgl1-mesa-dri
+
+jobs:
+  conventional-commits:
+    name: Conventional Commits
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - name: Check conventional commits
+        uses: cocogitto/cocogitto-action@52d0023b4396897f1815648e553db2ab8d782f3a # v4.2.0
+        with:
+          command: check
+          args: "${{ github.event.pull_request.base.sha }}..${{ github.event.pull_request.head.sha }}"
+
+  dco:
+    name: DCO Sign-off
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - name: Setup Task
+        uses: go-task/setup-task@a00fbb05ce67b35648be3c78cbc9fd85354c757e # v2.2.0
+      - name: Check sign-off
+        # SHAs via env, not inline interpolation: the repo-wide rule against
+        # expanding `${{ }}` straight into a shell command.
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: task git:dco RANGE="$BASE_SHA..$HEAD_SHA"
+
+  supply-chain:
+    name: Supply Chain
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Setup Task
+        uses: go-task/setup-task@a00fbb05ce67b35648be3c78cbc9fd85354c757e # v2.2.0
+      - name: Setup OCX
+        # Activates the root ocx.toml: cargo-deny and Node 24.
+        uses: ocx-sh/setup-ocx@25fa771f8572572dc64528db89560de68a163a0e # v1.4.0
+        with:
+          version: "0.6.8"
+          groups: default
+      - name: Dependency licences
+        id: licenses
+        run: task rust:license:deps
+        continue-on-error: true
+      - name: RUSTSEC advisories
+        id: advisories
+        run: task rust:audit
+        continue-on-error: true
+      - name: npm advisories
+        # A registry outage here is a rerun, not a finding.
+        id: npm-audit
+        run: ocx exec -- npm audit --audit-level=high
+        continue-on-error: true
+      - name: Check supply-chain results
+        if: ${{ !cancelled() }}
+        env:
+          LICENSES: ${{ steps.licenses.outcome }}
+          ADVISORIES: ${{ steps.advisories.outcome }}
+          NPM_AUDIT: ${{ steps.npm-audit.outcome }}
+        run: |
+          if [[ "$LICENSES" == "failure" || "$ADVISORIES" == "failure" || "$NPM_AUDIT" == "failure" ]]; then
+            echo "::error::Supply-chain checks failed (licenses=$LICENSES, advisories=$ADVISORIES, npm=$NPM_AUDIT)"
+            exit 1
+          fi
+
+  web:
+    name: Web
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Setup Task
+        uses: go-task/setup-task@a00fbb05ce67b35648be3c78cbc9fd85354c757e # v2.2.0
+      - name: Setup OCX
+        uses: ocx-sh/setup-ocx@25fa771f8572572dc64528db89560de68a163a0e # v1.4.0
+        with:
+          version: "0.6.8"
+          groups: default
+      - name: Type check
+        id: lint
+        run: task web:lint
+        continue-on-error: true
+      - name: Unit tests
+        run: task web:test
+      - name: Build
+        run: task web:build
+      - name: Check lint results
+        if: ${{ !cancelled() }}
+        env:
+          LINT: ${{ steps.lint.outcome }}
+        run: |
+          if [[ "$LINT" == "failure" ]]; then
+            echo "::error::Type check failed"
+            exit 1
+          fi
+
+  rust:
+    name: Rust (Linux)
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install system packages
+        run: |
+          read -ra pkgs <<< "$LINUX_PACKAGES"
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends "${pkgs[@]}"
+      - name: Setup Rust
+        uses: actions-rust-lang/setup-rust-toolchain@a188e68d0fd2bd36ad51dccb2b07ba6e75105f30 # v2.0.1
+        with:
+          matcher: true
+      - name: Rust Cache
+        uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2.9.3
+        with:
+          save-if: ${{ github.ref == 'refs/heads/main' }}
+      - name: Setup Task
+        uses: go-task/setup-task@a00fbb05ce67b35648be3c78cbc9fd85354c757e # v2.2.0
+      - name: Setup OCX
+        # The front end builds first (generate_context! embeds dist/), through ocx Node.
+        uses: ocx-sh/setup-ocx@25fa771f8572572dc64528db89560de68a163a0e # v1.4.0
+        with:
+          version: "0.6.8"
+          groups: default
+      - name: Install nextest
+        uses: taiki-e/install-action@cfdb7ed4ccc7c7dce37759eae89dc5674b469b39 # v2.90.3
+        with:
+          tool: cargo-nextest
+      - name: Check formatting
+        id: fmt
+        run: task rust:format:check
+        continue-on-error: true
+      - name: Clippy
+        id: clippy
+        run: task rust:clippy:check
+        continue-on-error: true
+      - name: Test
+        run: task rust:test:unit -- --profile ci
+      - name: Upload Unit Test Report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: unit-junit
+          path: target/nextest/ci/junit.xml
+          retention-days: 7
+      - name: Check lint results
+        if: ${{ !cancelled() }}
+        env:
+          FMT: ${{ steps.fmt.outcome }}
+          CLIPPY: ${{ steps.clippy.outcome }}
+        run: |
+          if [[ "$FMT" == "failure" || "$CLIPPY" == "failure" ]]; then
+            echo "::error::Lint checks failed (fmt=$FMT, clippy=$CLIPPY)"
+            exit 1
+          fi
+
+  grim:
+    name: Build grim
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Checkout grimoire
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: grimoire-rs/grimoire
+          ref: ${{ env.GRIM_COMMIT }}
+          # grim builds against two forks vendored as submodules.
+          submodules: recursive
+          path: grimoire
+          persist-credentials: false
+      - name: Setup Rust
+        uses: actions-rust-lang/setup-rust-toolchain@a188e68d0fd2bd36ad51dccb2b07ba6e75105f30 # v2.0.1
+        with:
+          cache: false
+      - name: Rust Cache
+        # Keyed on the grimoire revision, so the build is reused until GRIM_COMMIT moves.
+        uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2.9.3
+        with:
+          workspaces: "grimoire -> target"
+          key: grim-${{ env.GRIM_COMMIT }}
+          save-if: ${{ github.ref == 'refs/heads/main' }}
+      - name: Build grim
+        run: cargo build --release --locked --manifest-path grimoire/Cargo.toml -p grimoire
+      - name: Upload grim
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: grim-binary
+          path: grimoire/target/release/grim
+          compression-level: 0
+          retention-days: 3
+
+  acceptance:
+    name: Acceptance (Linux)
+    needs: grim
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Download grim
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: grim-binary
+          path: grim-binary
+      - name: Install system packages
+        run: |
+          read -ra pkgs <<< "$LINUX_PACKAGES"
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends "${pkgs[@]}"
+      - name: Setup Rust
+        uses: actions-rust-lang/setup-rust-toolchain@a188e68d0fd2bd36ad51dccb2b07ba6e75105f30 # v2.0.1
+        with:
+          matcher: true
+      - name: Rust Cache
+        uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2.9.3
+        with:
+          save-if: ${{ github.ref == 'refs/heads/main' }}
+      - name: Setup Task
+        uses: go-task/setup-task@a00fbb05ce67b35648be3c78cbc9fd85354c757e # v2.2.0
+      - name: Setup OCX
+        # Node for the front end, uv for the pytest suite.
+        uses: ocx-sh/setup-ocx@25fa771f8572572dc64528db89560de68a163a0e # v1.4.0
+        with:
+          version: "0.6.8"
+          groups: default
+      - name: Run acceptance suite
+        # CI=true (set by the runner) makes the tasks run directly on this
+        # runner instead of in the build container; test:accept builds the
+        # release app, stages both binaries and runs pytest under xvfb.
+        env:
+          GRIM_SOURCE_BINARY: ${{ github.workspace }}/grim-binary/grim
+        run: |
+          chmod +x "$GRIM_SOURCE_BINARY"
+          task test:accept GRIM_SOURCE_BINARY="$GRIM_SOURCE_BINARY"
+      - name: Suite floor and ceilings
+        run: task test:floor
+      - name: Upload Acceptance Report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: acceptance-junit
+          path: test/results/*.xml
+          retention-days: 7
+
+  build:
+    name: Build (${{ matrix.job.name }})
+    runs-on: ${{ matrix.job.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        job:
+          - { os: ubuntu-24.04, name: Linux, binary: grim-gui }
+          - { os: macos-latest, name: macOS, binary: grim-gui }
+          - { os: windows-latest, name: Windows, binary: grim-gui.exe }
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install system packages
+        if: ${{ runner.os == 'Linux' }}
+        run: |
+          read -ra pkgs <<< "$LINUX_PACKAGES"
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends "${pkgs[@]}"
+      - name: Setup Rust
+        uses: actions-rust-lang/setup-rust-toolchain@a188e68d0fd2bd36ad51dccb2b07ba6e75105f30 # v2.0.1
+      - name: Rust Cache
+        uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2.9.3
+        with:
+          save-if: ${{ github.ref == 'refs/heads/main' }}
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          cache: npm
+      - name: Install front-end dependencies
+        run: npm ci
+      - name: Build unsigned, no bundle
+        run: npx tauri build --no-bundle
+      - name: Upload binary
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: grim-gui-${{ matrix.job.name }}
+          path: target/release/${{ matrix.job.binary }}
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 3

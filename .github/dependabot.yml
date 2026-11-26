@@ -1,0 +1,42 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns:
+          - "*"
+    commit-message:
+      prefix: "ci(deps)"
+  # tauri and tauri-build move in lockstep with @tauri-apps/*: one group per
+  # ecosystem keeps a minor bump from landing on one side only.
+  - package-ecosystem: cargo
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      tauri:
+        patterns:
+          - "tauri"
+          - "tauri-build"
+          - "tauri-*"
+      rust-deps:
+        patterns:
+          - "*"
+    commit-message:
+      prefix: "chore(deps)"
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      tauri:
+        patterns:
+          - "@tauri-apps/*"
+      web-deps:
+        patterns:
+          - "*"
+    commit-message:
+      prefix: "chore(deps)"

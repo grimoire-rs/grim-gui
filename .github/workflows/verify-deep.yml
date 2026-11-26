@@ -1,0 +1,60 @@
+name: Verify Deep
+
+# Dispatch only: the bundled (installer) build on the three desktop systems.
+# Bundles are unsigned; signing and auto-update are out of scope for the skeleton.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  LINUX_PACKAGES: >-
+    libwebkit2gtk-4.1-dev build-essential curl wget file libxdo-dev libssl-dev
+    libayatana-appindicator3-dev librsvg2-dev patchelf xdg-utils
+
+jobs:
+  bundle:
+    name: Bundle (${{ matrix.job.name }})
+    runs-on: ${{ matrix.job.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        job:
+          - { os: ubuntu-24.04, name: Linux }
+          - { os: macos-latest, name: macOS }
+          - { os: windows-latest, name: Windows }
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install system packages
+        if: ${{ runner.os == 'Linux' }}
+        run: |
+          read -ra pkgs <<< "$LINUX_PACKAGES"
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends "${pkgs[@]}"
+      - name: Setup Rust
+        uses: actions-rust-lang/setup-rust-toolchain@a188e68d0fd2bd36ad51dccb2b07ba6e75105f30 # v2.0.1
+      - name: Rust Cache
+        uses: Swatinem/rust-cache@d1527c8f67ef9af357290475d4af4b0fab8f12e0 # v2.9.3
+        with:
+          save-if: false
+      - name: Setup Node
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+          cache: npm
+      - name: Install front-end dependencies
+        run: npm ci
+      - name: Build unsigned bundles
+        run: npx tauri build
+      - name: Upload bundles
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: grim-gui-bundle-${{ matrix.job.name }}
+          path: target/release/bundle/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 3
