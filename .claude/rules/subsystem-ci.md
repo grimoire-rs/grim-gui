@@ -101,8 +101,7 @@ Exception: a reusable workflow (`acceptance.yml`) declares none. Inside it `gith
 
 ### 7. grim comes from a pinned grimoire revision
 
-The acceptance suite and the SDK need a grim built from the grimoire repository. `verify-basic.yml` sets `GRIM_COMMIT` (a 40-hex SHA of `grimoire-rs/grimoire`), checks it out with submodules, builds grim and caches the build keyed on `GRIM_COMMIT`. The same SHA is the `rev` of the `grim-sdk` git dependency in the root `Cargo.toml`; moving one means moving both. Until the grimoire pull request lands and the repository exists on GitHub, the SDK resolves only through a local link, so these workflows cannot run (see the PR body).
-
+The acceptance suite and the SDK need a grim built from the grimoire repository. `verify-basic.yml` sets `GRIM_COMMIT` (a 40-hex SHA of `grimoire-rs/grimoire`), checks it out with submodules, builds grim and caches the build keyed on `GRIM_COMMIT`. The same SHA is the `rev` of the `grim-sdk` git dependency in the root `Cargo.toml`; moving one means moving both.
 ### 8. The workflows
 
 | Workflow | Trigger | Jobs |

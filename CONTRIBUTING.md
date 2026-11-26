@@ -27,9 +27,8 @@ task web:build                 # front end only: dist/
 task run                       # app against the Vite dev server
 ```
 
-The shell depends on the `grim-sdk` crate of the grimoire repository. Until it
-is pinned by commit, the root `Cargo.toml` resolves it through a sibling link
-named `.grimoire-split` that points at a grimoire checkout.
+The shell depends on the `grim-sdk` crate of the grimoire repository, pinned by
+revision in the root `Cargo.toml`.
 
 ## Running Tests
 

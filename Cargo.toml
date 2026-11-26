@@ -7,10 +7,9 @@ version = "0.1.0"
 edition = "2024"
 license = "Apache-2.0"
 
-# Local override (the repository split's GD-3): resolves through a symlink kept
-# outside both repositories. The pin step replaces this with a git rev.
+# The grim-sdk crate lives in the grimoire repository, pinned by revision.
 [workspace.dependencies]
-grim-sdk = { path = "../.grimoire-split/crates/grim-sdk" }
+grim-sdk = { git = "https://github.com/grimoire-rs/grimoire", rev = "82f4982ed4dac5aaab7f7ba006525b9f01a5cfdb" }
 
 [workspace.lints.rust]
 unsafe_code = "forbid"

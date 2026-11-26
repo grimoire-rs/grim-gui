@@ -18,9 +18,8 @@ concurrency:
 env:
   # The grimoire revision this app is built and tested against. It is also the
   # `rev` of the grim-sdk git dependency in the root Cargo.toml: move both
-  # together. These workflows cannot run until that revision is pushed to
-  # GitHub (see subsystem-ci.md).
-  GRIM_COMMIT: eaa7da0b2683d68a7bb61489e91238d47a7ef325
+  # together.
+  GRIM_COMMIT: 82f4982ed4dac5aaab7f7ba006525b9f01a5cfdb
   # Tauri 2 build prerequisites on Debian and Ubuntu, plus the virtual display
   # and software GL the acceptance suite needs.
   LINUX_PACKAGES: >-
