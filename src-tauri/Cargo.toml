@@ -18,7 +18,7 @@ crate-type = ["rlib"]
 custom-protocol = ["tauri/custom-protocol"]
 
 [build-dependencies]
-tauri-build = "=2.7.4"
+tauri-build = "=2.7.6"
 
 [dependencies]
 tauri = "=2.12.5"
