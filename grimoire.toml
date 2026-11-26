@@ -1,0 +1,16 @@
+#:schema https://grimoire.rs/schemas/grimoire-config.schema.json
+
+[options]
+clients = ["claude"]
+
+[bundles]
+hex = "ghcr.io/michael-herwig/arcana/hex:latest"
+nox = "ghcr.io/michael-herwig/arcana/nox:latest"
+rust-essentials = "ghcr.io/ocx-sh/lore/rust-essentials:latest"
+typescript-essentials = "ghcr.io/ocx-sh/lore/typescript-essentials:latest"
+python-essentials = "ghcr.io/ocx-sh/lore/python-essentials:latest"
+docs-essentials = "ghcr.io/ocx-sh/lore/docs-essentials:latest"
+
+[skills]
+
+[rules]
