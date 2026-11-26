@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-grim-version"
+description = "Enables the grim_version command without any pre-configured scope."
+commands.allow = ["grim_version"]
+
+[[permission]]
+identifier = "deny-grim-version"
+description = "Denies the grim_version command without any pre-configured scope."
+commands.deny = ["grim_version"]
