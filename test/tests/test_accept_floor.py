@@ -349,7 +349,8 @@ def test_the_committed_limits_parse_and_the_floor_covers_the_acceptance_cases() 
         for name in floor.LIMIT_FILES
     }
 
-    assert limits["SUITE_FLOOR"] >= 4
+    assert limits["SUITE_FLOOR"] >= 43
+    assert limits["SKIP_CEILING"] == 0
     assert limits["XFAIL_CEILING"] == 0
 
 

@@ -27,14 +27,26 @@ def _version(grim: Path) -> str:
 
 
 def test_grim_gui_subcommand_shows_the_found_version(
-    grim_binary: Path, gui_binary: Path
+    grim_binary: Path, gui_binary: Path, tmp_path: Path
 ) -> None:
-    """S-005: plugin dispatch starts grim-gui, which reports the dispatching grim's version."""
+    """S-005: plugin dispatch starts grim-gui, which reports the dispatching grim's version.
+
+    A decoy grim with another version comes first on PATH: only GRIM_BIN, set by the
+    dispatch, can make the app report the real one.
+    """
     assert grim_binary.parent == gui_binary.parent, (
         "both binaries are staged in test/bin"
     )
+    decoy_dir = tmp_path / "decoy"
+    decoy_dir.mkdir()
+    decoy = decoy_dir / "grim"
+    decoy.write_text(
+        "#!/bin/sh\necho 'grim 0.0.0-decoy'\n", encoding="utf-8", newline="\n"
+    )
+    decoy.chmod(decoy.stat().st_mode | stat.S_IXUSR)
+    assert _version(grim_binary) != "0.0.0-decoy"
     env = gui_env(
-        [grim_binary.parent, *SYSTEM_PATH],
+        [decoy_dir, grim_binary.parent, *SYSTEM_PATH],
         {"GRIM_HOME": str(grim_binary.parent / "home")},
     )
     proc = Proc([grim_binary, "gui"], env)

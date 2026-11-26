@@ -21,6 +21,6 @@ tasks:
     deps: [':web:build', install]
     dir: '{{.ROOT_DIR}}'
     cmds:
-      - '{{.IN}}cargo llvm-cov --workspace --no-report --ignore-run-fail'
+      - '{{.IN}}cargo llvm-cov --workspace --no-report'
       - '{{.IN}}cargo llvm-cov report --lcov --output-path lcov.info'
       - '{{.IN}}cargo llvm-cov report --html'

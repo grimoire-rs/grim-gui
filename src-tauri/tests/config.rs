@@ -23,7 +23,7 @@ fn csp_is_the_pinned_string() {
     let conf = json("tauri.conf.json");
     assert_eq!(
         conf["app"]["security"]["csp"],
-        "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src ipc: http://ipc.localhost"
+        "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src ipc: http://ipc.localhost; object-src 'none'; base-uri 'none'; form-action 'none'"
     );
 }
 
@@ -36,8 +36,15 @@ fn identifiers_are_pinned() {
 }
 
 #[test]
-fn capability_grants_only_the_bridge_command_to_main() {
-    let cap = json("capabilities/default.json");
+fn exactly_one_capability_grants_only_the_bridge_command_to_main() {
+    let dir = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("capabilities");
+    let files: Vec<_> = fs::read_dir(&dir)
+        .unwrap()
+        .map(|e| e.unwrap().path())
+        .filter(|p| p.extension().is_some_and(|x| x == "json"))
+        .collect();
+    assert_eq!(files.len(), 1, "{files:?}");
+    let cap: Value = serde_json::from_str(&fs::read_to_string(&files[0]).unwrap()).unwrap();
     assert_eq!(cap["windows"], serde_json::json!(["main"]));
     assert_eq!(cap["permissions"], serde_json::json!(["allow-grim-version"]));
 }

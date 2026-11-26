@@ -4,7 +4,8 @@ version: '3'
 
 vars:
   BIN_DIR: "{{.ROOT_DIR}}/test/bin"
-  IN: '{{if .CI}}{{else}}{{.ROOT_DIR}}/scripts/in-container.sh {{end}}'
+  # CI runs on the runner, with uv and node from the ocx toolchain; locally everything runs in the build container.
+  IN: '{{if .CI}}ocx exec -- {{else}}{{.ROOT_DIR}}/scripts/in-container.sh {{end}}'
   # The grim under test is built elsewhere (the grimoire checkout); it is copied, never run in place.
   GRIM_SOURCE_BINARY: '{{.GRIM_SOURCE_BINARY | default (printf "%s/../.grimoire-split/target/release/grim" .ROOT_DIR)}}'
   SHARD_LABEL: local
@@ -42,6 +43,6 @@ tasks:
 
   floor:
     desc: Judge results/junit-local-0-of-1.xml against SUITE_FLOOR, SKIP_CEILING and XFAIL_CEILING
-    dir: '{{.ROOT_DIR}}/test'
+    dir: '{{.ROOT_DIR}}'
     cmds:
       - "{{.IN}}sh -c 'cd test && python3 tools/accept_floor.py --label {{.SHARD_LABEL}} --shard-count 1'"

@@ -646,7 +646,7 @@ path = ".github/workflows/claude.yml"
 source_repo = "grimoire-rs/grimoire"
 source_path = ".github/workflows/claude.yml"
 source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
-mode = "copied"
+mode = "rewritten"
 sha256 = "c818a94926b77e22fafbabf3f1b9e86c73e2efce683348920693b94ee8fd0b76"
 
 [[file]]
@@ -1156,6 +1156,14 @@ reason = "A release build without the feature loads devUrl instead of the embedd
 [[deviation]]
 what = "`taskfiles/rust.taskfile.yml` and `test/taskfile.yml` run cargo and pytest through scripts/in-container.sh unless CI is set"
 reason = "PD-13: the host has no webkit2gtk; CI sets CI=true and calls cargo directly."
+
+[[deviation]]
+what = "the CSP in src-tauri/tauri.conf.json is extended beyond C-032 with `object-src 'none'; base-uri 'none'; form-action 'none'`"
+reason = "Hardening from review: the pinned directives leave plugin objects, base-URL rewriting and form posts to the defaults."
+
+[[deviation]]
+what = "ED-8: `@tauri-apps/*` npm packages are pinned at 2.12.4 while the tauri crate is 2.12.5"
+reason = "npm 2.12.5 is under two weeks old on 2026-11-26, and the dependency age floor outranks matching the crate patch version."
 
 [[row]]
 inventory = "agent_config"

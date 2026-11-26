@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import os
 import queue
+import shutil
 import subprocess
 import tempfile
 import threading
@@ -24,7 +25,10 @@ WEBKIT_ENV = {
 def gui_env(
     path: Sequence[Path | str], extra: dict[str, str] | None = None
 ) -> dict[str, str]:
-    """A scrubbed environment: given PATH, no GRIM_*, a private XDG_RUNTIME_DIR."""
+    """A scrubbed environment: given PATH, no GRIM_*, a private XDG_RUNTIME_DIR.
+
+    The runtime dir is removed by the ``Proc`` that is started with this environment.
+    """
     runtime = tempfile.mkdtemp(prefix="grim-gui-xdg-")
     os.chmod(runtime, 0o700)
     env = {
@@ -44,6 +48,7 @@ class Proc:
 
     def __init__(self, argv: Sequence[Path | str], env: dict[str, str]) -> None:
         self.lines: list[str] = []
+        self._runtime = env.get("XDG_RUNTIME_DIR")
         self._queue: queue.Queue[str | None] = queue.Queue()
         self.proc = subprocess.Popen(
             [str(a) for a in argv],
@@ -91,3 +96,5 @@ class Proc:
             except subprocess.TimeoutExpired:
                 self.proc.kill()
                 self.proc.wait()
+        if self._runtime:
+            shutil.rmtree(self._runtime, ignore_errors=True)

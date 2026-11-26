@@ -64,7 +64,7 @@ tasks:
     desc: Run unit tests
     deps: [':web:build']
     sources: *rust-sources
-    cmd: '{{.IN}}cargo nextest run --workspace --release --locked {{.CLI_ARGS}}'
+    cmd: '{{.IN}}cargo nextest run --workspace --locked {{.CLI_ARGS}}'
 
   license:check:
     desc: Check license headers on all source files

@@ -38,10 +38,20 @@ pub fn log_line(result: &Result<String, BridgeError>) -> String {
     }
 }
 
+/// Async, with the blocking SDK call on the blocking pool: a hung grim must not freeze the window.
 #[tauri::command]
-pub fn grim_version() -> Result<String, BridgeError> {
-    let result = version_with(&GrimDriver {
-        bin: grim_sdk::bin_from_env(),
+pub async fn grim_version() -> Result<String, BridgeError> {
+    let result = tauri::async_runtime::spawn_blocking(|| {
+        version_with(&GrimDriver {
+            bin: grim_sdk::bin_from_env(),
+        })
+    })
+    .await
+    .unwrap_or_else(|e| {
+        Err(BridgeError::Failed {
+            code: None,
+            message: format!("grim call did not complete: {e}"),
+        })
     });
     eprintln!("{}", log_line(&result));
     result
@@ -98,6 +108,33 @@ mod tests {
             other => panic!("{other:?}"),
         }
         assert_eq!(log_line(&r), "grim-gui: grim_version failed code=69");
+    }
+
+    #[test]
+    fn a_join_failure_logs_failed_without_a_code() {
+        let r: Result<String, BridgeError> = Err(BridgeError::Failed {
+            code: None,
+            message: "m".into(),
+        });
+        assert_eq!(log_line(&r), "grim-gui: grim_version failed");
+    }
+
+    #[test]
+    fn empty_version_output_is_passed_on_as_empty() {
+        let dir = tempfile::tempdir().unwrap();
+        let d = fake(dir.path(), "true");
+        assert_eq!(version_with(&d).unwrap(), "");
+    }
+
+    #[test]
+    fn a_non_executable_grim_is_not_a_success() {
+        let dir = tempfile::tempdir().unwrap();
+        let bin = dir.path().join("grim");
+        fs::write(&bin, "#!/bin/sh\necho 'grim 1'\n").unwrap();
+        fs::set_permissions(&bin, fs::Permissions::from_mode(0o644)).unwrap();
+        let r = version_with(&GrimDriver { bin });
+        assert!(r.is_err(), "{r:?}");
+        assert!(log_line(&r).starts_with("grim-gui: grim_version "));
     }
 
     #[test]

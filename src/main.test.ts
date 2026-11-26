@@ -34,4 +34,22 @@ describe("main", () => {
     await settle();
     expect(document.body.textContent).toContain("grim not found");
   });
+
+  it("renders a failed bridge error", async () => {
+    mockIPC(() => {
+      throw { kind: "failed", code: 69, message: "boom" };
+    });
+    await import("./main");
+    await settle();
+    expect(document.body.textContent).toContain("boom");
+  });
+
+  it("renders a plain-string rejection as failed with that text", async () => {
+    mockIPC(() => {
+      throw "plain text";
+    });
+    await import("./main");
+    await settle();
+    expect(document.body.textContent).toContain("plain text");
+  });
 });
