@@ -68,6 +68,9 @@ fn no_tauri_plugin_is_a_dependency() {
 #[test]
 fn tauri_crates_are_pinned_exactly() {
     let manifest: toml::Table = read("Cargo.toml").parse().unwrap();
-    assert_eq!(manifest["dependencies"]["tauri"].as_str(), Some("=2.12.5"));
-    assert_eq!(manifest["build-dependencies"]["tauri-build"].as_str(), Some("=2.7.4"));
+    // The pin shape, not the version: a dependency bump must not fail this test.
+    for (table, name) in [("dependencies", "tauri"), ("build-dependencies", "tauri-build")] {
+        let version = manifest[table][name].as_str().unwrap_or_default();
+        assert!(version.starts_with('='), "{name} is not pinned exactly: {version:?}");
+    }
 }
