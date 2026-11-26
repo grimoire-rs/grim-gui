@@ -1,0 +1,3526 @@
+[source]
+repository = "grimoire-rs/grimoire"
+
+[[file]]
+path = ".agents/research/research_repository_split_agent_config.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".agents/research/research_repository_split_agent_config.md"
+source_commit = "untracked"
+mode = "copied"
+sha256 = "f673c1f7d77154ea649b9b898b213ae31cbf786eb12de3de6439dd753135994f"
+
+[[file]]
+path = ".agents/research/research_repository_split_testing_and_conventions.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".agents/research/research_repository_split_testing_and_conventions.md"
+source_commit = "untracked"
+mode = "copied"
+sha256 = "b97b5d3e3798c92bc1af4912d8f9b366008ba545c1dd70564b59af917916ebfb"
+
+[[file]]
+path = ".claude/rules/quality-core.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/quality-core.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "5fbcc8b126bca2713e1f022569da6f22a1393c099cf3c22b2cb8f43a0dde628e"
+
+[[file]]
+path = ".claude/rules/quality-rust.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/quality-rust.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "6ecb8099f9dbcb4c52618bb773dc2d55f96430c0533bfc48a01aa675d92997eb"
+
+[[file]]
+path = ".claude/rules/quality-rust-errors.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/quality-rust-errors.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "b0f175ae8f323bae52cd9284f11789488c63dd0474a14819549aa0cc3d1bf0d5"
+
+[[file]]
+path = ".claude/rules/quality-rust-exit_codes.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/quality-rust-exit_codes.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "d5b8811ec5cd8dc09b7e11ba526e9efc696b0c100ac39cfa2a48d1a0950be0b8"
+
+[[file]]
+path = ".claude/rules/quality-python.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/quality-python.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "d4adea79eac0a189dabe6749baa38aeda98bfeae470d61363f27e0abe2f565d4"
+
+[[file]]
+path = ".claude/rules/quality-bash.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/quality-bash.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "b736386c08ac2e1eafbabc65a7a9b0c419fe26c373e0c1c9171c5f27a04f9277"
+
+[[file]]
+path = ".claude/rules/workflow-intent.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/workflow-intent.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "7fd737fdbd33b0931aee0725256151c28f7b6ade848f692233e17f3646a89ea3"
+
+[[file]]
+path = ".claude/rules/workflow-bugfix.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/workflow-bugfix.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "61cd5970badb3f60c14b4484a4505b760c8a20aa801bbc4e054e8ab0399ea916"
+
+[[file]]
+path = ".claude/rules/workflow-refactor.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/workflow-refactor.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "ea8eaa7337ee795e6fdb2b1b7db4fbdabc83a9d282275c0b6c76af2ce4bcb847"
+
+[[file]]
+path = ".claude/rules/workflow-feature.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/workflow-feature.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "2374897aa41ec321bea6036faad134bdbf301b963ff75a424ec30998f70f8f38"
+
+[[file]]
+path = ".claude/rules/workflow-git.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/workflow-git.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "91e94f752c4dec677171966b0e32442cd4241e4b7a92d3ec2b1b08d2e20e6947"
+
+[[file]]
+path = ".claude/rules/workflow-github.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/workflow-github.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "622960801fc50e8e8fe0c96a303ed7bb0399528c8f22cab3a182679b666a696f"
+
+[[file]]
+path = ".claude/rules/meta-ai-config.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/meta-ai-config.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "201d5b8ed52ff3eff6f420fcdbc20429afa054730792510a5b71efde7a5d7da5"
+
+[[file]]
+path = ".claude/rules/arch-principles.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/arch-principles.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "746a592179aa461032f53cd52900d0e6eff5ed66dafd5b022ec0c27b8253e93b"
+
+[[file]]
+path = ".claude/rules/arch-threat-model.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/arch-threat-model.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "2ff850179ce0c66c06781cac1acba4e47a5c905991e36f5f315e2d000eafbd79"
+
+[[file]]
+path = ".claude/rules/product-context.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/product-context.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "a06caf6c95054143d708fd5085eca0b76660d6a95c1c2f1c8f777908e13e4ceb"
+
+[[file]]
+path = ".claude/rules/product-tech-strategy.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/product-tech-strategy.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "0597815738967f49d776ad647fc2c2a2f2babeb125de0e738c29fac63da81c33"
+
+[[file]]
+path = ".claude/rules/quality-security.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/quality-security.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "c01c98837dc9e2b435679fbbc28a32fb54aa587c5dce329b5b158da3dff534a2"
+
+[[file]]
+path = ".claude/rules/subsystem-tests.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/subsystem-tests.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "51f8620919c757c2889df8266755ea9bffd918ac3a2837ba01990ad07ac31be1"
+
+[[file]]
+path = ".claude/rules/subsystem-ci.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/subsystem-ci.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "ac6053efe8e9b139ac6fbc0e6d1c651e859166e15807a9e3704b5fe70a382729"
+
+[[file]]
+path = ".claude/rules/subsystem-taskfiles.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules/subsystem-taskfiles.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "c2c051b222c26ad13c5cdc5c38f792cef16bba4e0095baa4b288ecfd2f4962ab"
+
+[[file]]
+path = ".claude/rules.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/rules.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "9fac9342ebb7515e8751a67adcea83c54ff1942e9f1bb2b987298fb1bd1dff6c"
+
+[[file]]
+path = ".claude/hooks/conventional_commit_validator.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/conventional_commit_validator.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "9eaf6a9011383b8c1d151a04937688cae0163be6d6377cdb4fb74e0a8c86a3f6"
+
+[[file]]
+path = ".claude/hooks/hook_utils.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/hook_utils.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "891f0ef2279d795f376ef7d4b6b5a95b3f33986511aad4466eb459f02a95f5fb"
+
+[[file]]
+path = ".claude/hooks/post_tool_use_tracker.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/post_tool_use_tracker.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "fc05384aa5ae2fcb7c1a86d0c15adadad6bafdd44e90db2005c4559a4a72f00e"
+
+[[file]]
+path = ".claude/hooks/pre_commit_verification.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/pre_commit_verification.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "978758b36a5ce61d84424a8655a72b0d9614299bae04286761068a4b406269d5"
+
+[[file]]
+path = ".claude/hooks/pre_push_main_blocker.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/pre_push_main_blocker.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "338bb0ff8045a415636ea224435586e82485ff484a8d6062df7e418ca8583e8d"
+
+[[file]]
+path = ".claude/hooks/pre_tool_use_validator.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/pre_tool_use_validator.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "1c51ef52095b6fb4a9e67e93690894362a91b838c2aaf3013560b3989b1b54be"
+
+[[file]]
+path = ".claude/hooks/session_start_loader.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/session_start_loader.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "596260ebf7c9b2266dd10ed2348ceaa97babd4d94864617c371bdfd7728432ff"
+
+[[file]]
+path = ".claude/hooks/stop_validator.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/stop_validator.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "d45cc2f5e403998943b5fe3b8dc8cef75df9e62eac1add6b0a7b89f491db2838"
+
+[[file]]
+path = ".claude/hooks/subagent_stop_logger.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/subagent_stop_logger.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "b8f3c43ef2cabbd2ee035cdb3346fa9dabdb160b2ed6c4b457f84ed04402680a"
+
+[[file]]
+path = ".claude/hooks/user_prompt_router.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/hooks/user_prompt_router.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "dd7501d6c39fa762adf5c26f5f608a379fe7db1752f7182c8db8a801d6979000"
+
+[[file]]
+path = ".claude/settings.json"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/settings.json"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "8e493737b26ac69226bcee2eee5e34a5bfd97b61ed4019a0aa0a8e9709550977"
+
+[[file]]
+path = ".claude/taskfile.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/taskfile.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "68dc3da072f6f2ccdf70091e4a3ce48cb853f45161cc76a68fc625bb3383bd8c"
+
+[[file]]
+path = ".claude/scripts/README.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/scripts/README.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "86ae7187218dbcda5726b8c1bfa7244a362f7f93024292996835a84ee44939f4"
+
+[[file]]
+path = ".claude/scripts/statusline-install.sh"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/scripts/statusline-install.sh"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "eaf90166bb9ac50c2a748bd25109daf61f3f6af6cd3d4f59caae5806b849d3cc"
+
+[[file]]
+path = ".claude/scripts/statusline.sh"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/scripts/statusline.sh"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "bdf9795a1b3350e58c56695097cb53dbe575e948a8756dddbbdd97836021b5a1"
+
+[[file]]
+path = ".claude/scripts/sync-canonical-blocks.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/scripts/sync-canonical-blocks.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "0052cd7345b95f88d0547959c1be61aef8233db1640ec04e06f0837ee6dc4e7a"
+
+[[file]]
+path = ".claude/templates/artifacts/adr.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/adr.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "d2fa5687bea07ee1fe0fba399898ba51037276bd538a1d74c0fc7269f63196c2"
+
+[[file]]
+path = ".claude/templates/artifacts/bugfix_plan.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/bugfix_plan.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "e926b2a6fd2f9e3ffb644350f293908e252a4c28cd3afd6bb771f2f938e96ef1"
+
+[[file]]
+path = ".claude/templates/artifacts/design_spec.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/design_spec.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "6dc3b42cf2c14ef6410a47de67a2eb539038cf0b50dcffa0ff769d49035321ce"
+
+[[file]]
+path = ".claude/templates/artifacts/plan.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/plan.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "595ab12f30e9fbc8d618bbc969f74b50999c27e035958ce436005f558908343d"
+
+[[file]]
+path = ".claude/templates/artifacts/postmortem.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/postmortem.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "3e19c11db5e5dd260393f972329a347b49e7478af114117700b1e15ca8762754"
+
+[[file]]
+path = ".claude/templates/artifacts/pr_faq.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/pr_faq.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "c292f2f3065d2978bb9f1fba69a0ae56dbff547076d754e5b74c0f08e11480db"
+
+[[file]]
+path = ".claude/templates/artifacts/prd.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/prd.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "e412c8001ff3516bb35beef42ba89ce38ca94b1e4b93f7cef9be72cfe89886f7"
+
+[[file]]
+path = ".claude/templates/artifacts/research.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/research.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "be7c966af02b9971d2f83ea7036ad56366d1057bcfe8ab166cb5afcd0fd7c4b7"
+
+[[file]]
+path = ".claude/templates/artifacts/roadmap.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/roadmap.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "d438ce2517d9bdf9552557433ae1ac5c4573aa43b7a9f334afe55c4d48ebc466"
+
+[[file]]
+path = ".claude/templates/artifacts/security_audit.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/security_audit.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "d440c1287010b7b580937ec87a6c90bbaacf042a82f54994a962f488a3eb5e69"
+
+[[file]]
+path = ".claude/templates/artifacts/system_design.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/artifacts/system_design.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "ee7f32820a1f99a6a33391bd0925ecf70887c61e31d82220701b27004f30d1ec"
+
+[[file]]
+path = ".claude/templates/claude_mechanisms/command.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/claude_mechanisms/command.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "e910d25e1650347cc8f84ba00b80bc389be750e89189fabd3e70716c8ab9fab1"
+
+[[file]]
+path = ".claude/templates/claude_mechanisms/hook.template.sh"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/claude_mechanisms/hook.template.sh"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "52aee77a5699445b2a920698cc3bd4f90adedc7328f26cb684e3020ebe64928e"
+
+[[file]]
+path = ".claude/templates/claude_mechanisms/rule.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/claude_mechanisms/rule.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "93688db06bffee0fd3a52555355c5f6dab3605bf9a398587066de36cccb1ed23"
+
+[[file]]
+path = ".claude/templates/claude_mechanisms/skill.template.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/templates/claude_mechanisms/skill.template.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "9477038a1c9a5dc05c74ccb2991e68b1a3ceab03b4f448f870187ed9abddc1a6"
+
+[[file]]
+path = ".claude/tests/pyproject.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/tests/pyproject.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "12c21c1f7df37b03b2dff5bfc4bec73f7cf8d3e49f2589df148d6ad8bb695900"
+
+[[file]]
+path = ".claude/tests/test_ai_config.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/tests/test_ai_config.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "0c87e162bfd79c3c107071a469e110920f1ebbb1209d7913e1c08ef5b9fb4fff"
+
+[[file]]
+path = ".claude/tests/test_hooks.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/tests/test_hooks.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "6c92d11fd4bf076a5ab412ce14ac288d8607e19159996734410549c3edefc6d4"
+
+[[file]]
+path = ".claude/tests/uv.lock"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/tests/uv.lock"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "3d5244ceb17636fdbf0118e62fa34dfa92e3890d92887ed84f629f3d0776c7a6"
+
+[[file]]
+path = ".claude/skills/commit/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/commit/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "d8d44489a7243747ec06f6c2c91ab4dfead56bbdcb227e6854dd0111a6958fc4"
+
+[[file]]
+path = ".claude/skills/commit/commit_reference.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/commit/commit_reference.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "695d803694d3882bb82696fe5947ce3488610a786e5e4f9d00c03a591822f842"
+
+[[file]]
+path = ".claude/skills/finalize/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/finalize/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "b94d4e5d6fa4747451d4ad0892f3a15eea2cd2ae944a4df3a14cea7d33ae78c2"
+
+[[file]]
+path = ".claude/skills/next/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/next/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "32ce5cef51e7b936588f58a48986635ff51026aaf0d4c6ec2ef6eec0d5f9dbc2"
+
+[[file]]
+path = ".claude/skills/bugfix/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/bugfix/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "20942bc18c96b46d1a2a6214df14f1d66de3825221d34da3e75d385eacde4731"
+
+[[file]]
+path = ".claude/skills/rca/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/rca/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "f78b85946cd24fb38eb38c2bd91c6ceb129be5dcec1bd84376f5c201109f0c34"
+
+[[file]]
+path = ".claude/skills/rca/references/sizing.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/rca/references/sizing.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "7cbe01d4dd2a79c75e320d3da81913347b31773fe1be67570cb2260d1e0e4b3d"
+
+[[file]]
+path = ".claude/skills/fix/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/fix/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "2e49001c831aca1006f852664f6e0c6a0a4fa414c5a22c1b0cf5eb2e19a99c5e"
+
+[[file]]
+path = ".claude/skills/builder/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/builder/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "312a20a195b779296f0d24872c4e3cc0b2e5539f132beaa61dedb0b798e874bc"
+
+[[file]]
+path = ".claude/skills/qa-engineer/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/qa-engineer/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "f44cbbc03b40afd8a03b76993e244b1abfda8937a41eb944a35c9aed350fe998"
+
+[[file]]
+path = ".claude/skills/code-check/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/code-check/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "b035020c753bca46ab4bda8e6e672d3c9bfda6f5baa73ff184869e8bbe4661b3"
+
+[[file]]
+path = ".claude/skills/security-auditor/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/security-auditor/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "b29d8085f14c7374ace8928f755552cf6d0e018673ef985c39994e4a855b0b3b"
+
+[[file]]
+path = ".claude/skills/meta-maintain-config/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/meta-maintain-config/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "77795eb75b3dcaaa46eb504d038ea0cb257b45b4a64e8be2fa0b710aa963f8a3"
+
+[[file]]
+path = ".claude/skills/meta-validate-context/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/meta-validate-context/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "8fc95f21971a62de7a42f57bf362bd344ec77c83496c389d3ab635be6ba49170"
+
+[[file]]
+path = ".claude/skills/outside-pr-review/SKILL.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/outside-pr-review/SKILL.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "ec69e276b74a9db4c5663df174983982598ed8bfe581a63fd9ced36714830e8c"
+
+[[file]]
+path = ".claude/skills/outside-pr-review/scripts/pr_scan.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".claude/skills/outside-pr-review/scripts/pr_scan.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "4b6d74699268b55099b49309b15cc4f22af0d47ac6dd6db6953bb354a1b057ea"
+
+[[file]]
+path = ".github/CODEOWNERS"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/CODEOWNERS"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "cc03523dd81886b93e3fad943bb193ad98b2ac9128656216e8cad837965c3a4f"
+
+[[file]]
+path = ".github/ISSUE_TEMPLATE/bug_report.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/ISSUE_TEMPLATE/bug_report.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "cae0d9e1c807892e443454b13e342a43304c434c21cf996dbf8d03466e25d142"
+
+[[file]]
+path = ".github/ISSUE_TEMPLATE/config.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/ISSUE_TEMPLATE/config.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "15d309c36e52b643521058c4fab7ef7ceb4458b33733bca96ee0861a8732fa5c"
+
+[[file]]
+path = ".github/ISSUE_TEMPLATE/feature_request.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/ISSUE_TEMPLATE/feature_request.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "33afd55fa61fce9d6bd96b3d8669a521740ff279385c8e0c706279727aa144e2"
+
+[[file]]
+path = ".github/dependabot.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/dependabot.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "00a3715693f291787232f243b9296f065637300922f45899c545eb58e2667c9a"
+
+[[file]]
+path = ".github/workflows/claude.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/workflows/claude.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "c818a94926b77e22fafbabf3f1b9e86c73e2efce683348920693b94ee8fd0b76"
+
+[[file]]
+path = ".github/workflows/verify-basic.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/workflows/verify-basic.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "854accc370ad5bd231ab41f1029fe9d1f845335f5691a970e74570cbd52c8de6"
+
+[[file]]
+path = ".github/workflows/verify-deep.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".github/workflows/verify-deep.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "6752654724c3e5166640bee9e412b9494897afe072f4d8548779a2bacc32dd1e"
+
+[[file]]
+path = "LICENSE"
+source_repo = "grimoire-rs/grimoire"
+source_path = "LICENSE"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "6fcdfefa06ae4e80a1ea2c37e92e86f8aa1dd17415b4b108462ed4ca17b30b1b"
+
+[[file]]
+path = "CODE_OF_CONDUCT.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = "CODE_OF_CONDUCT.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "09f1cbea5588ef83815621d6aeb3b5948c835834d7f32d091895a37789e84425"
+
+[[file]]
+path = "CONTRIBUTING.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = "CONTRIBUTING.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "768b889c01eb80e601f3443dfb3a27d0311a4c549728a08ce64976e26b7a61af"
+
+[[file]]
+path = "SECURITY.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = "SECURITY.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "dbb7cb11951e952c91720117253a6eec4018ad1ebeda5161af3c5efb5a3706bb"
+
+[[file]]
+path = ".agents/README.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".agents/README.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "6155f7e85ece56b4290b67afb7ebe0ee642967b80921334481fc55caf596caae"
+
+[[file]]
+path = ".agents/memory/hex.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".agents/memory/hex.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "2423d327185a755b160b51f55be5a1264c2f83f506d862a4994ca55fb162ce71"
+
+[[file]]
+path = ".claude/rules/artifact-kinds.md"
+source_repo = "grimoire-rs/vscode"
+source_path = ".claude/rules/artifact-kinds.md"
+source_commit = "9230dcd364dcdd9b1f5b0bc206423972789cdd39"
+mode = "rewritten"
+sha256 = "ee382973aafb8782d87b00385255c7147d8ada086097a65591424ea558db900e"
+
+[[file]]
+path = ".claude/rules/grim-compat-markers.md"
+source_repo = "grimoire-rs/vscode"
+source_path = ".claude/rules/grim-compat-markers.md"
+source_commit = "9230dcd364dcdd9b1f5b0bc206423972789cdd39"
+mode = "copied"
+sha256 = "f91b2589dc554fc54843374d88a51c1009589daa0ccdefa9df09a35a054bfd87"
+
+[[file]]
+path = "AGENTS.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = "AGENTS.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "b73a9452ce1f92817958fde15f7ebf35de7def64022ec9590cfbe35153a660f1"
+
+[[file]]
+path = "CLAUDE.md"
+source_repo = "grimoire-rs/grimoire"
+source_path = "CLAUDE.md"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "1463ece9016bab9728b0e970bc253802ddbfb60d5219169b8b837bfe25e9e754"
+
+[[file]]
+path = "rust-toolchain.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "rust-toolchain.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "d2b591fd4f5d41ac50680b9b5d75113a954ac5e1ed9d0e99018babcfd85be043"
+
+[[file]]
+path = "rustfmt.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "rustfmt.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "e090969e99df9360705680cc0097cfaddae10c22dc2e01470592cf3b9787fd36"
+
+[[file]]
+path = "taplo.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "taplo.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "c144033254902c44c4e9ec16f79902d87df469688c21a445dcecdb8ab21153b2"
+
+[[file]]
+path = "cog.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "cog.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "61db312ade1f0595e61c3961f89782c976a54ca385689cade39b03e6fda82e5b"
+
+[[file]]
+path = ".taskrc.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".taskrc.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "b492357e86cede567ee8305afb9cf8a4cbe5b5595b55f6145e0d690b1c62d02c"
+
+[[file]]
+path = "taskfiles/git.taskfile.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "taskfiles/git.taskfile.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "2c8c033b92073d0ffde4b4b1b550f24e38fdb221928428235e2499f2f39992b3"
+
+[[file]]
+path = "test/tools/accept_floor.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tools/accept_floor.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "4f0477d57dae3c50dfc9fa03de14d41f3b8ece4b9703d15c59c19e6b066b1fe0"
+
+[[file]]
+path = "test/tools/accept_shard.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tools/accept_shard.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "74342d6dd148f37201baa513c6de8a2fee90c97219925c550fb2c90717af1c75"
+
+[[file]]
+path = "test/tools/require_all_passed.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tools/require_all_passed.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "78e3256650bdf904f9c3d0503f1defd5a37cebec07534908be9b9480541647de"
+
+[[file]]
+path = "test/tests/test_text_io_hygiene.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_text_io_hygiene.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "copied"
+sha256 = "f8d352a4c6919bfb3b583e84a20ae895a91f36974e92c8d1e41c457e3108fbb9"
+
+[[file]]
+path = "deny.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "deny.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "f99533a0cb165bee7d412c32923641ea1bf846c8f2ec9c8b3d37b09037720706"
+
+[[file]]
+path = ".licenserc.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".licenserc.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "253881fd08b670839dd0a9dfead3834022569d157008abb0e63b2d5b27ba27c9"
+
+[[file]]
+path = ".config/nextest.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".config/nextest.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "2abed55ff361cb72a54fb3c3e44ba0e492cca9da23bd9edd3403f562494e1d15"
+
+[[file]]
+path = ".gitattributes"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".gitattributes"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "f42e8cf62d9fb8257d2589cf07e8c987074b555a882875af554d22f3e9b0ee25"
+
+[[file]]
+path = ".gitignore"
+source_repo = "grimoire-rs/grimoire"
+source_path = ".gitignore"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "916cbac71760c1fb87197b536343c9a4ce2b4697dfc9d256de10ca6c58367bd1"
+
+[[file]]
+path = "taskfile.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "taskfile.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "12fac30f89e0a6898415c3930e0f3143b7bb1e2fd4c7902cfac7e2807a288ed1"
+
+[[file]]
+path = "taskfiles/rust.taskfile.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "taskfiles/rust.taskfile.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "55084cee5cca69f861fd7f4c06712b28895ee9f3691ecfdc81c3c045ae994bc0"
+
+[[file]]
+path = "taskfiles/shell.taskfile.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "taskfiles/shell.taskfile.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "4a93bc5c4e21506aba18ff9c831751d2ecb7c6437f40a3f8a7b80aa9031f55eb"
+
+[[file]]
+path = "ocx.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "ocx.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "ad7d1dc2b0fab6d8e55f52b7c8a26ec3cf0cb56871a5a517af07b0bddeab2227"
+
+[[file]]
+path = "Cargo.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "Cargo.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "de6960d3726bdd32dbc45dd288d5499f4356463c7620a17b1f7590d0f7d74f21"
+
+[[file]]
+path = "test/taskfile.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/taskfile.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "fb86302c9110f29f7b8704a2896aa90e089f58a611baca16a274b75a9e033926"
+
+[[file]]
+path = "test/conftest.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/conftest.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "34ea3b3430edef00b766f9ca0151dddb8ed7f27d7b895f6ee60c566e2875051d"
+
+[[file]]
+path = "test/pyproject.toml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/pyproject.toml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "6a2aa9def19840d336115d029d245bc74693efbe29687abcf20731f0287e56fb"
+
+[[file]]
+path = "test/.gitignore"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/.gitignore"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "176b04ae736c2f10e2d4fc7b6bb268aa286c676e25dd7dd80ac6c7a4c0ef8513"
+
+[[file]]
+path = "test/tests/test_accept_floor.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_accept_floor.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "8ff9204924ae011d586118f052a813a4d6d7d461335977efb67b3fa5a3e7f1f9"
+
+[[file]]
+path = "test/tests/test_accept_shard.py"
+source_repo = "grimoire-rs/grimoire"
+source_path = "test/tests/test_accept_shard.py"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "6170fc46a31ac29d54a719b4babf631e53f3bf8199abfb638891c3827a6ea3e2"
+
+[[file]]
+path = "src-tauri/icons/128x128.png"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/128x128.png"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "1f3689f6374b0553996fdc99743799216703835070145d7f0e6ec11e6280139e"
+
+[[file]]
+path = "src-tauri/icons/128x128@2x.png"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/128x128@2x.png"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "69194785eef4323955af73b0c03362ac0804db056c2424f9715076cabc0ed103"
+
+[[file]]
+path = "src-tauri/icons/32x32.png"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/32x32.png"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "d151f11e325f7502de0c739a2e51697aa569fd4701ae6e11fae1a3b4c7d5f157"
+
+[[file]]
+path = "src-tauri/icons/Square107x107Logo.png"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/Square107x107Logo.png"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "fd8658ff0e2c177ce0779d11fea1574e9d7d82a52a3a9197038f37b07fe24475"
+
+[[file]]
+path = "src-tauri/icons/Square142x142Logo.png"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/Square142x142Logo.png"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "c348fcf2d2f2f9714a41925184926f77f440676987d233ae1daf4fd94fda245f"
+
+[[file]]
+path = "src-tauri/icons/Square150x150Logo.png"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/Square150x150Logo.png"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "d46dc2bc568f911b9cb978de68b4a7e3ad458fbac15196597849c43c40f4b65a"
+
+[[file]]
+path = "src-tauri/icons/Square284x284Logo.png"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/Square284x284Logo.png"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "80d93a5257c89ea57023c30500c889b4df062430ffb0b4fed4ca4785d13e29ac"
+
+[[file]]
+path = "src-tauri/icons/Square30x30Logo.png"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/Square30x30Logo.png"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "c3ce70e22ec2ed3ea2d0362a767d087e6cadb93ec71e80010649f892520175f4"
+
+[[file]]
+path = "src-tauri/icons/Square310x310Logo.png"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/Square310x310Logo.png"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "624dd93ddb1f0d69f2a4aa7af0b0646ae3ae6347cbb42dab56ef88dba7f38d07"
+
+[[file]]
+path = "src-tauri/icons/Square44x44Logo.png"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/Square44x44Logo.png"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "f9eca6f00dba41cfecfedbc9a6f88014b4ee0f9dbf016e202c7ede09c60107ef"
+
+[[file]]
+path = "src-tauri/icons/Square71x71Logo.png"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/Square71x71Logo.png"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "66a6b51da8962a9472c9d29b1b08e3309561521bf7fbaac52b9f680df13ff487"
+
+[[file]]
+path = "src-tauri/icons/Square89x89Logo.png"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/Square89x89Logo.png"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "fe8da53273722bb6fd66e98bf6810e8a7db22aeff27c6c1a096d57ba556b9ef4"
+
+[[file]]
+path = "src-tauri/icons/StoreLogo.png"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/StoreLogo.png"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "5412fce324344999aad82f6b69abcaa6c8792eac7b79a4b321aaaeacd0525eaf"
+
+[[file]]
+path = "src-tauri/icons/icon.icns"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/icon.icns"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "3dc10493b7de48a61de58f768f8a5708d3a44a068c148cedf0502b9b9b71ba5d"
+
+[[file]]
+path = "src-tauri/icons/icon.ico"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/icon.ico"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "e38ca88e1d5490f3dcbc3c3fa525f7fcb7b80fff3cb2f3a4eb1b2d018c0915c1"
+
+[[file]]
+path = "src-tauri/icons/icon.png"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/icons/icon.png"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "copied"
+sha256 = "b5d93c8ec365c08b11bd006e46a46e227c681d30bb295af3d017573bfc752a83"
+
+[[file]]
+path = "src-tauri/Cargo.toml"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/Cargo.toml.lte"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "rewritten"
+sha256 = "6f60049a9cc26ab1d9ca2abae64f7973b1f19b642956081532fd4d7e242550ea"
+
+[[file]]
+path = "src-tauri/tauri.conf.json"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/%(v2)%tauri.conf.json.lte"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "rewritten"
+sha256 = "4b518b273f94f549439590b27f7c8ef1fe3081dacd15b18691ddfbbb611f437e"
+
+[[file]]
+path = "src-tauri/capabilities/default.json"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/capabilities/%(v2)%default.json.lte"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "rewritten"
+sha256 = "50e6561a0c5480e8f19379bb0f745c4ac48b8114a7127e614ecec24640cd74c0"
+
+[[file]]
+path = "src-tauri/build.rs"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/_base_/src-tauri/build.rs"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "rewritten"
+sha256 = "487059eaf8a947b80f20a9aacac038a5047b2ad69d2401b827376c67d6fe847f"
+
+[[file]]
+path = "package.json"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/template-vanilla-ts/package.json.lte"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "rewritten"
+sha256 = "e4a08a74741a60acbdfbf7d75fa98e626e8eeee4168012f6f4eaa4859d789557"
+
+[[file]]
+path = "tsconfig.json"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/template-vanilla-ts/tsconfig.json"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "rewritten"
+sha256 = "96faa2c21c132609a8970b5b98cb941b4c6a31c39ed23c31ddaca9cea1f3d350"
+
+[[file]]
+path = "vite.config.ts"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/template-vanilla-ts/vite.config.ts.lte"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "rewritten"
+sha256 = "d68a58b09193b938d21c4c6b39c6a25177a0263b342cf21666d0b0fee9228960"
+
+[[file]]
+path = "index.html"
+source_repo = "tauri-apps/create-tauri-app"
+source_path = "templates/template-vanilla-ts/index.html"
+source_commit = "16a754703baf0ca40fd4462dfc7674bc99bf3ef3"
+mode = "rewritten"
+sha256 = "290d46cc71bdf2813e7cd712d8cced39f6adb1b60045b7aeb10e325bae6536f9"
+
+[[deviation]]
+what = "S-007 asserts `failed code=69`, not `failed code=78`"
+reason = "grim-sdk maps every exit code outside 69, 74, 75, 80 and 81 to 69 'unexpected output' (C-004), so a fake grim exiting 78 surfaces as code 69 with 78 in the message."
+
+[[deviation]]
+what = "`cargo build --release` for grim-gui passes `--features custom-protocol` (feature added to src-tauri/Cargo.toml)"
+reason = "A release build without the feature loads devUrl instead of the embedded front end, so the acceptance run saw no IPC call; `tauri build` enables it itself."
+
+[[deviation]]
+what = "`taskfiles/rust.taskfile.yml` and `test/taskfile.yml` run cargo and pytest through scripts/in-container.sh unless CI is set"
+reason = "PD-13: the host has no webkit2gtk; CI sets CI=true and calls cargo directly."
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§1#1"
+disposition = "taken"
+targets = ["grimoire.toml", "grimoire.lock"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§1#2"
+disposition = "taken"
+targets = [".claude/skills/hex-architect", ".claude/skills/hex-core", ".claude/skills/hex-discuss", ".claude/skills/hex-execute", ".claude/skills/hex-finalize", ".claude/skills/hex-init", ".claude/skills/hex-loop", ".claude/skills/hex-plan", ".claude/skills/hex-retro", ".claude/skills/hex-review"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§1#3"
+disposition = "taken"
+targets = [".claude/rules/hex-state.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§1#4"
+disposition = "taken"
+targets = [".claude/skills/nox-review"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#1"
+disposition = "taken"
+targets = ["CLAUDE.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#2"
+disposition = "taken"
+targets = ["AGENTS.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#3"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "describes grim-gui, a Tauri 2 shell that only invokes grim through grim-sdk; status skeleton, Unstable"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#4"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "pointer kept; names grim-gui's own product-context.md"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#5"
+disposition = "taken"
+targets = ["AGENTS.md", ".claude/rules.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#6"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "tasks are web:lint, web:test, test:accept, ci:lint; Rust builds run in the Linux build container (scripts/in-container.sh)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#7"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "one-member workspace src-tauri plus front end src/; one row per code area (shell, web, tests, ci, taskfiles)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#8"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "GUI's own variables: GRIM_BIN (read via grim_sdk), WEBKIT/GDK test harness variables, GRIM_SOURCE_BINARY"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#9"
+disposition = "not-applicable"
+reason = "grim-specific: no catalog/ of publishable first-party packages in grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#10"
+disposition = "taken"
+targets = ["AGENTS.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#11"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "principle 9 replaced by Respect grim's Contracts: the app consumes frozen grim contracts and never reshapes them; count sentence stays nine"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#12"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "Tauri 2 shell with TypeScript front end recorded as the deviation from the Rust-only golden path"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#13"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "worktree sibling convention renamed to grim-gui-wt-<topic>; adds a Scaffold provenance paragraph; no submodule or archive text"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#14"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "skill list drops docs, changelog, prepare-release and upstream-refresh; adds installed lore bundles and nox"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#15"
+disposition = "taken"
+targets = ["AGENTS.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#16"
+disposition = "taken"
+targets = ["AGENTS.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§2#17"
+disposition = "taken"
+targets = ["AGENTS.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#1"
+disposition = "taken"
+targets = [".claude/rules.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#2"
+disposition = "taken"
+targets = [".claude/rules.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#3"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "rows name grim-gui's rules (bridge command, IPC threat model, shared kind rules); grim-only concerns dropped"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#4"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "Rust, TypeScript, Python, Bash; TypeScript points at the installed lore rules"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#5"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "five rows: shell, web, tests, ci, taskfiles"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#6"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "mirrors the paths: frontmatter of grim-gui's rules; src-tauri/** and src/** replace src/**"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#7"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "global count stays four; the list names grim-gui's four"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#8"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "declared groups cover grim-gui's globs only (shell, web, threat model, installed comment rule)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#9"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "section renamed Installed rules; lists the bundles grim-gui installs (rust, typescript, python, hex); no local edits to vendored files"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§3#10"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "drops docs, changelog, prepare-release and upstream-refresh rows"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#1"
+disposition = "taken"
+targets = [".claude/rules/quality-core.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#2"
+disposition = "rewritten"
+targets = [".claude/rules/product-tech-strategy.md"]
+reason = "Tauri 2 shell and TypeScript front end deviation, no hook launcher"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#3"
+disposition = "taken"
+targets = [".claude/rules/workflow-intent.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#4"
+disposition = "taken"
+targets = [".claude/rules/hex-state.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#5"
+disposition = "taken"
+targets = [".claude/rules/quality-rust.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#6"
+disposition = "taken"
+targets = [".claude/rules/quality-rust-errors.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#7"
+disposition = "taken"
+targets = [".claude/rules/quality-rust-exit_codes.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#8"
+disposition = "taken"
+targets = [".claude/rules/quality-python.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#9"
+disposition = "taken"
+targets = [".claude/rules/quality-bash.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#10"
+disposition = "rewritten"
+targets = [".claude/rules/quality-security.md"]
+reason = "generic top kept; grimoire attack surfaces replaced by webview, IPC bridge and spawned-grim surfaces"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#11"
+disposition = "taken"
+targets = [".claude/rules/workflow-bugfix.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#12"
+disposition = "taken"
+targets = [".claude/rules/workflow-refactor.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#13"
+disposition = "rewritten"
+targets = [".claude/rules/workflow-feature.md"]
+reason = "globs and gate names follow grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#14"
+disposition = "rewritten"
+targets = [".claude/rules/workflow-git.md"]
+reason = "submodule section dropped; glob targets cog.toml"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#15"
+disposition = "rewritten"
+targets = [".claude/rules/workflow-github.md"]
+reason = "org, repository, labels and issue types follow grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.1#16"
+disposition = "rewritten"
+targets = [".claude/rules/meta-ai-config.md"]
+reason = "names and cross-repo ADR references edited; 4 global rules and 280-line budget unchanged"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#1"
+disposition = "not-applicable"
+reason = "grim-mirror crate invariants; grim-gui's own areas carry subsystem-shell.md and subsystem-web.md, authored fresh"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#2"
+disposition = "not-applicable"
+reason = "no CLI shell in grim-gui: the Tauri entry is src-tauri/src/main.rs, covered by subsystem-shell.md"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#3"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-shell.md"]
+reason = "the JSON contract becomes the R12 convention: bridge commands return grim's JSON unchanged"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#4"
+disposition = "not-applicable"
+reason = "grim-specific: index of grim's 27 subcommands"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#5"
+disposition = "not-applicable"
+reason = "grim-specific: the $GRIM_HOME content store and index layout"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#6"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-ci.md"]
+reason = "names grim-gui's workflows (verify-basic, verify-deep, claude)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#7"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-taskfiles.md"]
+reason = "generic conventions kept; file layout and verify phases are grim-gui's"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#8"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-tests.md"]
+reason = "black-box pytest against the grim-gui binary under xvfb in the container; suite floor files"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#9"
+disposition = "not-applicable"
+reason = "grim-specific: ArtifactKind matrix; grim-gui carries the sibling-shared artifact-kinds.md instead"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#10"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which grim-gui does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#11"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which grim-gui does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#12"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which grim-gui does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#13"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which grim-gui does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#14"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which grim-gui does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#15"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which grim-gui does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#16"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which grim-gui does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#17"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which grim-gui does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#18"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which grim-gui does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.2#19"
+disposition = "not-applicable"
+reason = "grim-specific: the grim installer, which grim-gui does not contain"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.3#1"
+disposition = "rewritten"
+targets = [".claude/rules/arch-principles.md"]
+reason = "grim-gui's layout, invoke-never-link boundary and empty ADR index"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.3#2"
+disposition = "rewritten"
+targets = [".claude/rules/arch-threat-model.md"]
+reason = "attackers on webview content, the IPC bridge and the spawned grim; insiders are non-goals"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.3#3"
+disposition = "rewritten"
+targets = [".claude/rules/product-context.md"]
+reason = "grim-gui identity; Related Repositories lists grimoire, grim-mirror and the sibling clients"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.3#4"
+disposition = "not-applicable"
+reason = "docs-style is the Grimoire docs voice for a docs site U lacks; docs-quality is installed instead (B8.6)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.3#5"
+disposition = "not-applicable"
+reason = "grim-specific: vendor renderer declines and upstream harness ledger"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§4.3#6"
+disposition = "not-applicable"
+reason = "no release flow in grim-gui (PD-20)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#1"
+disposition = "taken"
+targets = [".claude/hooks/hook_utils.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#2"
+disposition = "rewritten"
+targets = [".claude/hooks/pre_commit_verification.py", "taskfile.yml"]
+reason = "detect_project_tools also finds a Rust shell under src-tauri/ without a root Cargo.toml"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#3"
+disposition = "rewritten"
+targets = [".claude/hooks/conventional_commit_validator.py"]
+reason = "comment on the release type reworded to cite cog.toml; type list unchanged"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#4"
+disposition = "rewritten"
+targets = [".claude/hooks/pre_tool_use_validator.py"]
+reason = "generated-file table names src-tauri/gen/schemas (tauri-build) instead of the cargo-dist release.yml"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#5"
+disposition = "rewritten"
+targets = [".claude/hooks/post_tool_use_tracker.py"]
+reason = "CONTEXT_REMINDERS and CONFIG_REMINDERS rewritten for src-tauri/**, src/**, test/**"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#6"
+disposition = "taken"
+targets = [".claude/hooks/user_prompt_router.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#7"
+disposition = "taken"
+targets = [".claude/hooks/session_start_loader.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#8"
+disposition = "taken"
+targets = [".claude/hooks/stop_validator.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#9"
+disposition = "taken"
+targets = [".claude/hooks/subagent_stop_logger.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§5#10"
+disposition = "taken"
+targets = [".claude/hooks/pre_push_main_blocker.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#1"
+disposition = "rewritten"
+targets = [".claude/settings.json"]
+reason = "same hook wiring and timeouts; claudeMdExcludes drops docs-quality"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#2"
+disposition = "taken"
+targets = [".gitignore"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#3"
+disposition = "not-applicable"
+reason = "grim-gui declares no MCP server; GitHub work goes through the gh CLI"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#4"
+disposition = "not-applicable"
+reason = "per-developer Serena project config, gitignored in grimoire and not committed"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#5"
+disposition = "taken"
+targets = [".taskrc.yml"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#6"
+disposition = "rewritten"
+targets = [".gitignore"]
+reason = "all of grimoire's agent-state ignores kept (state, hook state and locks, settings.local.json, CLAUDE.local.md, .agents scratch, scheduled_tasks.lock, .serena)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#7"
+disposition = "taken"
+targets = [".github/CODEOWNERS"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§6#8"
+disposition = "rewritten"
+targets = [".gitattributes", ".licenserc.toml"]
+reason = "no agent entries in either; .gitattributes drops LFS and conformance lines for the Tauri icon and ocx.lock rules"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#1"
+disposition = "rewritten"
+targets = [".claude/tests/test_ai_config.py"]
+reason = "vendored sets follow grim-gui's installed bundles (reference skills added, docs-quality and docs skills dropped)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#2"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#3"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#4"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#5"
+disposition = "rewritten"
+targets = [".claude/tests/test_ai_config.py"]
+reason = "worktree convention string is grim-gui-wt-"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#6"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#7"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#8"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#9"
+disposition = "not-applicable"
+reason = "no release flow in grim-gui, so no workflow-release.md (PD-20)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#10"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#11"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#12"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#13"
+disposition = "rewritten"
+targets = [".claude/tests/test_ai_config.py"]
+reason = "skill-invocation table drops docs, changelog, prepare-release, upstream-refresh; adds the reference skills"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#14"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#15"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#16"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#17"
+disposition = "taken"
+targets = [".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#18"
+disposition = "rewritten"
+targets = [".claude/tests/test_ai_config.py"]
+reason = "ADR-index and stale-proposed allowlists emptied: grim-gui starts with no ADRs"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#19"
+disposition = "rewritten"
+targets = [".claude/tests/test_hooks.py"]
+reason = "reminder rows, generated-file and Tauri-shell cases follow grim-gui's hooks"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#20"
+disposition = "not-applicable"
+reason = "no harness ledger or upstream-refresh skill in grim-gui (PD-20)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#21"
+disposition = "not-applicable"
+reason = "no OCX signing or release workflow in grim-gui (PD-20)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§7#22"
+disposition = "taken"
+targets = [".claude/tests/pyproject.toml"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§8#1"
+disposition = "taken"
+targets = [".claude/templates/artifacts"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§8#2"
+disposition = "taken"
+targets = [".claude/templates/claude_mechanisms"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§8#3"
+disposition = "rewritten"
+targets = [".claude/scripts/README.md", ".claude/scripts/statusline.sh", ".claude/scripts/statusline-install.sh"]
+reason = "scripts unchanged; README names grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§8#4"
+disposition = "taken"
+targets = [".claude/scripts/sync-canonical-blocks.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§8#5"
+disposition = "rewritten"
+targets = [".claude/taskfile.yml"]
+reason = "tests task runs test_ai_config, test_hooks, test_scaffold_manifest and the manifest check; link check skips bundle-installed paths"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§8#6"
+disposition = "taken"
+targets = [".gitignore"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§8#7"
+disposition = "rewritten"
+targets = [".claude/skills/rust-quality-reference", ".claude/skills/python-quality-reference", ".claude/skills/rust-cargo-reference", ".claude/skills/typescript-quality-reference", ".claude/skills/python-packaging-reference", ".claude/skills/code-docs-reference"]
+reason = "bundles render support material as *-reference skills, so no rules/<x>/ dirs; settings claudeMdExcludes kept for the rest"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#1"
+disposition = "rewritten"
+targets = [".claude/skills/commit"]
+reason = "posture and gate names follow grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#2"
+disposition = "taken"
+targets = [".claude/skills/finalize"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#3"
+disposition = "rewritten"
+targets = [".claude/skills/next"]
+reason = "names grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#4"
+disposition = "rewritten"
+targets = [".claude/skills/bugfix"]
+reason = "gate and paths follow grim-gui (src-tauri, test)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#5"
+disposition = "rewritten"
+targets = [".claude/skills/rca"]
+reason = "paths and repo name follow grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#6"
+disposition = "rewritten"
+targets = [".claude/skills/fix"]
+reason = "gate names follow grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#7"
+disposition = "rewritten"
+targets = [".claude/skills/builder"]
+reason = "paths follow grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#8"
+disposition = "rewritten"
+targets = [".claude/skills/qa-engineer"]
+reason = "suites and tasks follow grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#9"
+disposition = "rewritten"
+targets = [".claude/skills/code-check"]
+reason = "names grim-gui's rules"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#10"
+disposition = "rewritten"
+targets = [".claude/skills/security-auditor"]
+reason = "threat model and paths follow grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#11"
+disposition = "not-applicable"
+reason = "grim-specific: authors the Grimoire docs site; grim-gui has none"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#12"
+disposition = "not-applicable"
+reason = "no release flow or site changelog in grim-gui (PD-20)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#13"
+disposition = "not-applicable"
+reason = "no release flow in grim-gui (PD-20)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#14"
+disposition = "rewritten"
+targets = [".claude/skills/outside-pr-review"]
+reason = "scan paths follow grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#15"
+disposition = "not-applicable"
+reason = "no harness capability ledger in grim-gui (PD-20)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#16"
+disposition = "taken"
+targets = [".claude/skills/meta-maintain-config"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§9#17"
+disposition = "rewritten"
+targets = [".claude/skills/meta-validate-context"]
+reason = "example paths follow grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#1"
+disposition = "rewritten"
+targets = [".agents/adr", ".agents/plans", ".agents/specs", ".agents/research", ".agents/retro", ".agents/memory"]
+reason = "discussions, goals and worktrees directories are created by hex skills on first use; worktrees stays gitignored"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#2"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "planning flow kept; research and provenance noted"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#3"
+disposition = "taken"
+targets = [".claude/rules/meta-ai-config.md", ".claude/tests/test_ai_config.py"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#4"
+disposition = "rewritten"
+targets = [".agents/memory/hex.md"]
+reason = "Pointers, Preferences and an empty Memory"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#5"
+disposition = "rewritten"
+targets = [".agents/memory/hex.md"]
+reason = "names task verify, web:lint, test:accept, src-tauri security-sensitive paths and the IPC bridge"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#6"
+disposition = "taken"
+targets = [".agents/memory/hex.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#7"
+disposition = "rewritten"
+targets = [".agents/memory/hex.md"]
+reason = "perspectives.always rows target src-tauri/**, index.html and workflows; research-axes name Tauri 2 and webview security"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#8"
+disposition = "not-applicable"
+reason = "a new repository starts with an empty Memory; the entries are grimoire's plan history"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#9"
+disposition = "taken"
+targets = [".agents/retro/inbox"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#10"
+disposition = "rewritten"
+targets = [".agents/memory/hex.md"]
+reason = "directories absent until a hex skill creates them; hex.md Pointers names the discussions home"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#11"
+disposition = "not-applicable"
+reason = "grim-specific: harness capability ledger"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#12"
+disposition = "not-applicable"
+reason = "grim-gui renders bundles to .claude/skills only (clients = claude); no .agents/skills copies"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#13"
+disposition = "rewritten"
+targets = [".agents/adr/README.md", ".claude/rules/arch-principles.md"]
+reason = "index-row-per-ADR convention kept; grim-gui starts with no ADRs"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§10#14"
+disposition = "not-applicable"
+reason = "grim-specific: handover, review and security-audit records of grimoire"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§11#1"
+disposition = "not-applicable"
+reason = "none present in grim-gui either; grimoire.toml clients is claude only"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§11#2"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "written for grim-gui; Claude reaches it through CLAUDE.md"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§11#3"
+disposition = "not-applicable"
+reason = "see 10#12: no .agents/skills in grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§11#4"
+disposition = "taken"
+targets = ["grimoire.toml"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§11#5"
+disposition = "rewritten"
+targets = ["ocx.toml", "ocx.lock"]
+reason = "grim-gui pins its own tool set (node, uv, ruff, shellcheck, shfmt, hawkeye, cargo-deny, lychee, actionlint)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§11#6"
+disposition = "taken"
+targets = [".claude/skills/nox-review", ".agents/memory/hex.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#1"
+disposition = "taken"
+targets = [".claude/hooks/pre_commit_verification.py", "taskfile.yml"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#2"
+disposition = "rewritten"
+targets = [".github/ISSUE_TEMPLATE", ".claude/rules/workflow-github.md"]
+reason = "forms and discussions URL point at grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#3"
+disposition = "rewritten"
+targets = ["CONTRIBUTING.md", "SECURITY.md", "CODE_OF_CONDUCT.md"]
+reason = "CODE_OF_CONDUCT.md unchanged; the other two rewritten for grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#4"
+disposition = "taken"
+targets = ["taskfile.yml"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#5"
+disposition = "rewritten"
+targets = [".config/nextest.toml"]
+reason = "grimoire-specific comments and probe override dropped"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#6"
+disposition = "not-applicable"
+reason = "grim-gui has no docs site and no catalog/"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#7"
+disposition = "taken"
+targets = ["taskfiles/git.taskfile.yml", ".github/workflows/verify-basic.yml"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§12#8"
+disposition = "not-applicable"
+reason = "grim-specific: external/rust-oci-client submodule"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#1"
+disposition = "not-applicable"
+reason = "grim-mirror counterpart; the crate and its rule live in the grim-mirror repository"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#2"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "architecture table lists grim-gui's own code areas"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#3"
+disposition = "not-applicable"
+reason = "grim-mirror ADR, design and plan live in the grim-mirror repository"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#4"
+disposition = "not-applicable"
+reason = "grim-mirror acceptance tests live in the grim-mirror repository"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#5"
+disposition = "taken"
+targets = [".claude/rules/meta-ai-config.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#6"
+disposition = "rewritten"
+targets = [".claude/hooks/post_tool_use_tracker.py"]
+reason = "reminder rows added for src-tauri/**, src/** and test/**"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#7"
+disposition = "rewritten"
+targets = [".claude/hooks/post_tool_use_tracker.py"]
+reason = "reminder rows for the workspace and src-tauri Cargo.toml follow grim-gui"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#8"
+disposition = "not-applicable"
+reason = "mirror docs page reminder: grim-gui has no docs page"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#9"
+disposition = "rewritten"
+targets = [".claude/rules/arch-threat-model.md", ".claude/rules/quality-rust.md"]
+reason = "threat model rewritten for grim-gui; quality rules cover **/*.rs unchanged"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#10"
+disposition = "rewritten"
+targets = [".claude/rules/product-context.md"]
+reason = "Related Repositories lists grimoire and grim-mirror"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§13#11"
+disposition = "rewritten"
+targets = ["AGENTS.md", "CLAUDE.md"]
+reason = "grim-gui is its own repository and carries both files"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#1"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "full AGENTS.md as in grimoire, not vscode's 12-line list"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#2"
+disposition = "taken"
+targets = ["CLAUDE.md"]
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#3"
+disposition = "rewritten"
+targets = [".claude/rules.md"]
+reason = "catalog present, as in the indexer"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#4"
+disposition = "rewritten"
+targets = [".claude/rules"]
+reason = "first-party and installed rules of grim-gui, plus the two shared sibling rules"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#5"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-shell.md", ".claude/rules/subsystem-web.md", ".claude/rules/subsystem-tests.md"]
+reason = "subsystem family kept with shell and web rules"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#6"
+disposition = "rewritten"
+targets = [".claude/hooks"]
+reason = "full hook set, unlike the siblings' empty directory"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#7"
+disposition = "rewritten"
+targets = [".claude/settings.json"]
+reason = "hook wiring as in grimoire"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#8"
+disposition = "rewritten"
+targets = [".claude/tests"]
+reason = "structural tests kept, unlike the siblings"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#9"
+disposition = "rewritten"
+targets = [".claude/skills"]
+reason = "grimoire's first-party skills plus bundle skills, not vscode's swarm layout"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#10"
+disposition = "not-applicable"
+reason = "grim-gui authors no project-local subagents (meta-ai-config.md)"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#11"
+disposition = "rewritten"
+targets = ["grimoire.toml"]
+reason = "installs hex, nox and the rust, typescript and python bundles"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#12"
+disposition = "rewritten"
+targets = [".agents"]
+reason = "tracked planning tree"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#13"
+disposition = "rewritten"
+targets = [".gitignore"]
+reason = "see 6#6"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#14"
+disposition = "rewritten"
+targets = ["taskfile.yml"]
+reason = "taskfile.yml with subsystem taskfiles"
+
+[[row]]
+inventory = "agent_config"
+key = "agent_config§14#15"
+disposition = "rewritten"
+targets = [".claude/rules/artifact-kinds.md", ".claude/rules/grim-compat-markers.md"]
+reason = "both carried from vscode: grim-compat-markers copied, artifact-kinds rewritten for grim-gui"
+
+[[file]]
+path = "taskfiles/coverage.taskfile.yml"
+source_repo = "grimoire-rs/grimoire"
+source_path = "taskfiles/coverage.taskfile.yml"
+source_commit = "72d3fce16fa93890f0cddef4a8d7443c980716ab"
+mode = "rewritten"
+sha256 = "8296fc4e09fae5d37c8f47e59f003a7b2fb4a7241ab784ef79b0c56d87c71dfc"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.1"
+disposition = "rewritten"
+targets = ["src-tauri/src", "src-tauri/tests", "src/main.test.ts", "src/view.test.ts", "taskfiles/rust.taskfile.yml", "taskfiles/web.taskfile.yml"]
+reason = "nextest on the shell crate plus vitest for the front end; inline Rust tests, tests beside the TypeScript"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.2"
+disposition = "rewritten"
+targets = [".config/nextest.toml"]
+reason = "ci profile and JUnit path kept; the zero-retry override for grimoire probe and index-sync tests dropped, no such tests here"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.3"
+disposition = "rewritten"
+targets = ["src-tauri/tests/boundary.rs"]
+reason = "guards the SDK-only boundary of the shell crate (C-029); no dist-workspace.toml check"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.4"
+disposition = "not-applicable"
+reason = "grim-specific: licence text fixtures belong to grim-mirror"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.5"
+disposition = "rewritten"
+targets = ["test/tests", "test/conftest.py", "test/src"]
+reason = "same black-box concept (run the built binary, assert stdout, stderr and exit codes), reduced to four app cases plus the harness meta tests; the app is driven under xvfb, not against a registry"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.6"
+disposition = "rewritten"
+targets = [".claude/tests/test_ai_config.py", ".claude/tests/test_hooks.py", ".claude/tests/test_scaffold_manifest.py", ".claude/taskfile.yml"]
+reason = "adapted to U's rule set and layout; also runs test_scaffold_manifest.py and the manifest check"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.7"
+disposition = "rewritten"
+targets = ["taskfiles/ci.taskfile.yml"]
+reason = "test_workflows.py dropped (PD-20: no release or OCX signing workflow); actionlint through ci:lint in task verify is the workflow gate instead"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.8"
+disposition = "rewritten"
+targets = ["taskfiles/docs.taskfile.yml", "taskfile.yml"]
+reason = "no site build or URL contract in U; docs:check runs the docs-essentials declaration, prose and raw-link checks over README.md and is in the lint phase of verify"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.9"
+disposition = "not-applicable"
+reason = "grim-specific: reads grimoire docs and CLI, casts, index benchmarks or the index e2e contract"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.10"
+disposition = "not-applicable"
+reason = "grim-specific: reads grimoire docs and CLI, casts, index benchmarks or the index e2e contract"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.11"
+disposition = "not-applicable"
+reason = "grim-specific: reads grimoire docs and CLI, casts, index benchmarks or the index e2e contract"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.12"
+disposition = "not-applicable"
+reason = "no size-budgeted binary: the unsigned skeleton sets no bundle size budget (grim-hook launcher is grim-specific)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.13"
+disposition = "not-applicable"
+reason = "grim-specific: Principle 9 compatibility fixtures and old-grim runs; grim-gui has no released surface"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.14"
+disposition = "not-applicable"
+reason = "grim-specific: reads grimoire docs and CLI, casts, index benchmarks or the index e2e contract"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A1.15"
+disposition = "not-applicable"
+reason = "no scripts/ helper tests: scripts/in-container.sh is covered by acceptance case S-008 and shell:verify"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.1"
+disposition = "rewritten"
+targets = ["test/pyproject.toml"]
+reason = "project grim-gui-tests; xdist, tmp retention and testpaths kept; index_e2e and bench markers and the pexpect, rich, opentelemetry-proto dependencies dropped"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.2"
+disposition = "rewritten"
+targets = ["test/uv.lock"]
+reason = "regenerated for this repository's dependency set"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.3"
+disposition = "not-applicable"
+reason = "no registry in the GUI suite: the app is driven against the staged grim and a fake grim, so zot, the registry client, the git fixture and the mirror runner have no use"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.4"
+disposition = "rewritten"
+targets = ["test/conftest.py"]
+reason = "grim_binary (GRIM_COMMAND, else test/bin/grim) kept; gui_binary (GRIM_GUI_COMMAND, else test/bin/grim-gui) added; a missing binary aborts the session with exit 4; no registry, grim_home or unique_repo fixtures"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.5"
+disposition = "not-applicable"
+reason = "mirror-only fixture (`GrimMirrorRunner` / `git_fixture`); U drives no mirror"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.6"
+disposition = "taken"
+targets = ["test/conftest.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.7"
+disposition = "not-applicable"
+reason = "grim-specific: skips --global runs under host managed Claude settings; the GUI suite never passes --global"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.8"
+disposition = "not-applicable"
+reason = "no tests/conftest.py or helpers.py: the GUI cases need only the two binary fixtures and src/gui.py"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.9"
+disposition = "taken"
+targets = ["test/src/__init__.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.10"
+disposition = "not-applicable"
+reason = "no symlink or path assertions in the GUI cases; assertions.py not carried"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.11"
+disposition = "not-applicable"
+reason = "grim-specific support module (consent driver, hook launcher, index fixture, OCI proxy, old-grim, OTLP, scenarios, stdio drivers) with no GUI use"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.12"
+disposition = "not-applicable"
+reason = "mirror-only fixture (`GrimMirrorRunner` / `git_fixture`); U drives no mirror"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.13"
+disposition = "not-applicable"
+reason = "no tests/conftest.py or helpers.py: the GUI cases need only the two binary fixtures and src/gui.py"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.14"
+disposition = "not-applicable"
+reason = "grim-specific support module (consent driver, hook launcher, index fixture, OCI proxy, old-grim, OTLP, scenarios, stdio drivers) with no GUI use"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.15"
+disposition = "not-applicable"
+reason = "grim-specific support module (consent driver, hook launcher, index fixture, OCI proxy, old-grim, OTLP, scenarios, stdio drivers) with no GUI use"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.16"
+disposition = "not-applicable"
+reason = "grim-specific support module (consent driver, hook launcher, index fixture, OCI proxy, old-grim, OTLP, scenarios, stdio drivers) with no GUI use"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.17"
+disposition = "not-applicable"
+reason = "grim-specific support module (consent driver, hook launcher, index fixture, OCI proxy, old-grim, OTLP, scenarios, stdio drivers) with no GUI use"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.18"
+disposition = "not-applicable"
+reason = "grim-specific support module (consent driver, hook launcher, index fixture, OCI proxy, old-grim, OTLP, scenarios, stdio drivers) with no GUI use"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.19"
+disposition = "not-applicable"
+reason = "no registry in the GUI suite: the app is driven against the staged grim and a fake grim, so zot, the registry client, the git fixture and the mirror runner have no use"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.20"
+disposition = "rewritten"
+targets = ["test/src/gui.py"]
+reason = "isolated-environment subprocess runner rewritten for a GUI child: scrubbed env, private XDG_RUNTIME_DIR, WebKit software-rendering variables, stderr line reader with a deadline"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.21"
+disposition = "not-applicable"
+reason = "grim-specific support module (consent driver, hook launcher, index fixture, OCI proxy, old-grim, OTLP, scenarios, stdio drivers) with no GUI use"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.22"
+disposition = "not-applicable"
+reason = "grim-specific support module (consent driver, hook launcher, index fixture, OCI proxy, old-grim, OTLP, scenarios, stdio drivers) with no GUI use"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.23"
+disposition = "not-applicable"
+reason = "no registry in the GUI suite: the app is driven against the staged grim and a fake grim, so zot, the registry client, the git fixture and the mirror runner have no use"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.24"
+disposition = "not-applicable"
+reason = "grim-specific: test data trees, Principle 9 diff tool, manual registry rigs; none apply to U"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.25"
+disposition = "rewritten"
+targets = ["test/taskfile.yml", "test/.gitignore", ".gitignore", ".github/workflows/verify-basic.yml"]
+reason = "test/bin is gitignored; task test:stage copies grim (GRIM_SOURCE_BINARY) and the release grim-gui into it; CI downloads the grim-binary artifact built at the pinned grimoire commit"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.26"
+disposition = "rewritten"
+targets = ["test/SUITE_FLOOR", "test/SKIP_CEILING", "test/XFAIL_CEILING", "test/tools/accept_floor.py", "test/taskfile.yml"]
+reason = "mechanism and tools unchanged; the three numbers are U's own (43, 0, 0); PARK_SCOPE is src, src-tauri, test (no crates/ here)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.27"
+disposition = "rewritten"
+targets = ["test/tools/accept_floor.py", "test/tools/accept_shard.py"]
+reason = "accept_shard.py unchanged; accept_floor.py differs only in PARK_SCOPE and its docstring (no crates/ in U)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.28"
+disposition = "taken"
+targets = ["test/tools/require_all_passed.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.29"
+disposition = "not-applicable"
+reason = "grim-specific: test data trees, Principle 9 diff tool, manual registry rigs; none apply to U"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.30"
+disposition = "rewritten"
+targets = ["test/tests/test_accept_floor.py", "test/tests/test_accept_shard.py", "test/tests/test_text_io_hygiene.py"]
+reason = "meta tests kept; the park-scope case follows U's PARK_SCOPE and the floor-value assertion fits U's suite size"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.31"
+disposition = "rewritten"
+targets = ["test/taskfile.yml"]
+reason = "stage, accept and floor tasks; accept runs pytest under dbus-run-session and xvfb-run in the build container; no parallel, shard, index, old-grim, bench or demo tasks"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.32"
+disposition = "rewritten"
+targets = ["test/README.md"]
+reason = "rewritten for the GUI suite: layout, running, isolation, limits (added during PX accounting)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.33"
+disposition = "not-applicable"
+reason = "grim-specific: test data trees, Principle 9 diff tool, manual registry rigs; none apply to U"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.34"
+disposition = "not-applicable"
+reason = "four GUI cases share one virtual display and run in series; pytest-xdist stays in the dev group but no task passes -n"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.35"
+disposition = "not-applicable"
+reason = "the acceptance suite is Linux-only (xvfb, WebKitGTK in a container); macOS and Windows are covered by the unsigned build matrix, not by pytest marks"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.36"
+disposition = "rewritten"
+targets = ["test/tests/test_gui.py"]
+reason = "asserts the exact stderr line the bridge writes (ok version, not-found, failed code=69) and the wrapper exit code 69 with its message; no JSON output to parse"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.37"
+disposition = "taken"
+targets = ["test/tests", "test/conftest.py", "test/src", "test/tools"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A2.38"
+disposition = "taken"
+targets = ["test/tests", "test/conftest.py", "test/src", "test/tools"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A3.1"
+disposition = "rewritten"
+targets = ["taskfile.yml"]
+reason = "phase 1 runs format, clippy, shell, claude, web:lint and ci:lint; phase 2 build, unit tests, web tests and test:accept; no catalog or scripts task; .verify:mark unchanged"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A3.2"
+disposition = "taken"
+targets = ["taskfile.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A3.3"
+disposition = "rewritten"
+targets = ["taskfiles/rust.taskfile.yml"]
+reason = "verify, format, clippy, build, test:unit, license and audit tasks kept and run in the build container; hook size and audit tasks dropped"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A3.4"
+disposition = "rewritten"
+targets = ["taskfiles/rust.taskfile.yml", "taskfiles/web.taskfile.yml", "test/taskfile.yml"]
+reason = "sources anchors cover src-tauri and the front end; build generates target/release/grim-gui; npm install keyed on package-lock.json"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A3.5"
+disposition = "taken"
+targets = ["taskfile.yml", ".claude/hooks/pre_commit_verification.py"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A3.6"
+disposition = "rewritten"
+targets = ["taskfiles/docs.taskfile.yml", "taskfile.yml"]
+reason = "docs:check runs only the docs-quality checks over README.md; no build, theme or landing checks, no npm audit, no Node needed"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A3.7"
+disposition = "taken"
+targets = [".github/workflows/verify-basic.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.1"
+disposition = "taken"
+targets = ["test/README.md", ".claude/rules/subsystem-tests.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.2"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-tests.md", "test/src/gui.py"]
+reason = "isolation is a scrubbed environment and a private XDG_RUNTIME_DIR per child; no per-test GRIM_HOME or registry repository"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.3"
+disposition = "rewritten"
+targets = ["test/conftest.py", ".claude/rules/subsystem-tests.md"]
+reason = "the required thing is the staged binaries: a missing grim or grim-gui aborts the session with exit 4 instead of skipping"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.4"
+disposition = "taken"
+targets = ["test/tests/test_text_io_hygiene.py", ".claude/rules/subsystem-tests.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.5"
+disposition = "not-applicable"
+reason = "U's suite has no registry and no symlink output; the rule enters `subsystem-tests.md` with the first such case"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.6"
+disposition = "not-applicable"
+reason = "U's suite has no registry and no symlink output; the rule enters `subsystem-tests.md` with the first such case"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.7"
+disposition = "taken"
+targets = ["test/taskfile.yml", ".claude/rules/subsystem-tests.md", ".github/workflows/verify-basic.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.8"
+disposition = "taken"
+targets = [".claude/rules/workflow-bugfix.md", "AGENTS.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.9"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-shell.md"]
+reason = "new bridge command needs a unit test, an acceptance case and a README update in one change; recorded in subsystem-shell.md"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.10"
+disposition = "taken"
+targets = ["Cargo.toml", ".claude/rules/quality-rust.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.11"
+disposition = "taken"
+targets = [".claude/rules/quality-python.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.12"
+disposition = "taken"
+targets = ["AGENTS.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.13"
+disposition = "taken"
+targets = [".claude/rules/quality-core.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "A4.14"
+disposition = "rewritten"
+targets = [".claude/rules/subsystem-tests.md"]
+reason = "rewritten for U's Structure table, scenarios and path scope"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#1"
+disposition = "not-applicable"
+reason = "mirror-suite specific: fixtures and helpers (grim_mirror runner, registry, unique_repo, grim_at, project_dir, zot lifecycle, git and registry clients, write_config) that the GUI suite does not have"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#2"
+disposition = "not-applicable"
+reason = "mirror-suite specific: fixtures and helpers (grim_mirror runner, registry, unique_repo, grim_at, project_dir, zot lifecycle, git and registry clients, write_config) that the GUI suite does not have"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#3"
+disposition = "not-applicable"
+reason = "mirror-suite specific: fixtures and helpers (grim_mirror runner, registry, unique_repo, grim_at, project_dir, zot lifecycle, git and registry clients, write_config) that the GUI suite does not have"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#4"
+disposition = "not-applicable"
+reason = "mirror-suite specific: fixtures and helpers (grim_mirror runner, registry, unique_repo, grim_at, project_dir, zot lifecycle, git and registry clients, write_config) that the GUI suite does not have"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#5"
+disposition = "rewritten"
+targets = ["test/conftest.py"]
+reason = "grim_binary and gui_binary with their GRIM_COMMAND and GRIM_GUI_COMMAND overrides; no grim_home"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#6"
+disposition = "not-applicable"
+reason = "mirror-suite specific: fixtures and helpers (grim_mirror runner, registry, unique_repo, grim_at, project_dir, zot lifecycle, git and registry clients, write_config) that the GUI suite does not have"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#7"
+disposition = "not-applicable"
+reason = "mirror-suite specific: fixtures and helpers (grim_mirror runner, registry, unique_repo, grim_at, project_dir, zot lifecycle, git and registry clients, write_config) that the GUI suite does not have"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#8"
+disposition = "not-applicable"
+reason = "mirror-suite specific: fixtures and helpers (grim_mirror runner, registry, unique_repo, grim_at, project_dir, zot lifecycle, git and registry clients, write_config) that the GUI suite does not have"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#9"
+disposition = "not-applicable"
+reason = "mirror-suite specific: fixtures and helpers (grim_mirror runner, registry, unique_repo, grim_at, project_dir, zot lifecycle, git and registry clients, write_config) that the GUI suite does not have"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#10"
+disposition = "rewritten"
+targets = ["test/src/gui.py"]
+reason = "gui_env replaces GrimRunner's isolated environment"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#11"
+disposition = "not-applicable"
+reason = "no skipif marks: the suite is Linux-only"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#12"
+disposition = "rewritten"
+targets = [".github/workflows/verify-basic.yml"]
+reason = "one artifact, grim-binary, built at the pinned grimoire commit; grim-gui is built in the acceptance job itself; deep verify only bundles"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A5#13"
+disposition = "rewritten"
+targets = ["src-tauri/tests/boundary.rs", "src-tauri/src"]
+reason = "inline unit tests and a boundary test for the shell crate; no licence fixtures"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#1"
+disposition = "rewritten"
+targets = ["test/conftest.py"]
+reason = "binary fixtures renamed for the GUI; no registry, home or managed-settings guard"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#2"
+disposition = "rewritten"
+targets = ["test/src/gui.py"]
+reason = "gui_env and Proc replace GrimRunner"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#3"
+disposition = "not-applicable"
+reason = "grim-specific harness part U does not carry (registry client, helpers, tests/conftest, git fixture, zot, state paths)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#4"
+disposition = "not-applicable"
+reason = "grim-specific harness part U does not carry (registry client, helpers, tests/conftest, git fixture, zot, state paths)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#5"
+disposition = "not-applicable"
+reason = "grim-specific harness part U does not carry (registry client, helpers, tests/conftest, git fixture, zot, state paths)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#6"
+disposition = "not-applicable"
+reason = "grim-specific harness part U does not carry (registry client, helpers, tests/conftest, git fixture, zot, state paths)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#7"
+disposition = "not-applicable"
+reason = "grim-specific harness part U does not carry (registry client, helpers, tests/conftest, git fixture, zot, state paths)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#8"
+disposition = "rewritten"
+targets = ["test/taskfile.yml"]
+reason = "GRIM_SOURCE_BINARY staging replaces the build; no ocx exec pytest, g0 grim pin, indexer or old-grim variables"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#9"
+disposition = "rewritten"
+targets = ["test/tools/accept_floor.py"]
+reason = "park marker kept; PARK_SCOPE is src, src-tauri, test"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "testing_and_conventions§A6#10"
+disposition = "not-applicable"
+reason = "grim-specific harness part U does not carry (registry client, helpers, tests/conftest, git fixture, zot, state paths)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.1"
+disposition = "rewritten"
+targets = [".github/workflows/verify-basic.yml"]
+reason = "cocogitto, dco, supply-chain (plus npm audit), web, rust, grim build, acceptance and a three-OS unsigned build; top-level permissions contents read only; no hook-size jobs"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.2"
+disposition = "rewritten"
+targets = [".github/workflows/verify-deep.yml"]
+reason = "dispatch-only; bundled unsigned build on Linux, macOS and Windows; never a pre-merge gate"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.3"
+disposition = "not-applicable"
+reason = "acceptance runs as one inline job in verify-basic.yml (PD-15): a single 43-case Linux shard needs no reusable sharded workflow"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.4"
+disposition = "not-applicable"
+reason = "no release flow in U (PD-20, PD-15): builds are unsigned, signing and updater keys are out of scope"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.5"
+disposition = "not-applicable"
+reason = "grim-specific: signs and pushes grimoire's OCX package, publishes its catalog"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.6"
+disposition = "not-applicable"
+reason = "grim-specific: signs and pushes grimoire's OCX package, publishes its catalog"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.7"
+disposition = "not-applicable"
+reason = "no release flow in U (PD-20, PD-15): builds are unsigned, signing and updater keys are out of scope"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.8"
+disposition = "rewritten"
+targets = [".github/workflows/claude.yml"]
+reason = "same workflow, claude-code-action pinned by SHA to a tag at least two weeks old"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.9"
+disposition = "not-applicable"
+reason = "no docs site to deploy in U"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.10"
+disposition = "not-applicable"
+reason = "no composite build action: the Rust build steps are inline in the jobs that need them"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.11"
+disposition = "taken"
+targets = [".github/workflows/verify-basic.yml", ".github/workflows/verify-deep.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.12"
+disposition = "taken"
+targets = [".github/workflows/verify-basic.yml", ".github/workflows/verify-deep.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.13"
+disposition = "taken"
+targets = [".github/workflows/verify-basic.yml", ".github/workflows/verify-deep.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.14"
+disposition = "rewritten"
+targets = [".github/workflows/verify-basic.yml", ".github/workflows/verify-deep.yml"]
+reason = "Linux acceptance plus an unsigned no-bundle build on Linux, macOS and Windows in basic; deep bundles on the same three systems; no cargo-xwin legs"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.15"
+disposition = "taken"
+targets = [".github/workflows/verify-basic.yml", ".github/workflows/verify-deep.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.16"
+disposition = "rewritten"
+targets = [".github/dependabot.yml"]
+reason = "github-actions, cargo (tauri group kept in lockstep) and npm at the root; no build-rust action entry, no release.yml exclusion"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.17"
+disposition = "taken"
+targets = [".github/CODEOWNERS"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.18"
+disposition = "rewritten"
+targets = [".github/ISSUE_TEMPLATE/bug_report.yml", ".github/ISSUE_TEMPLATE/config.yml", ".github/ISSUE_TEMPLATE/feature_request.yml"]
+reason = "fields and discussions link name grim-gui"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B1.19"
+disposition = "taken"
+targets = [".github/workflows/verify-basic.yml", ".github/workflows/verify-deep.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.1"
+disposition = "rewritten"
+targets = ["taskfile.yml"]
+reason = "includes git, rust, shell, web, ci, gui, coverage, claude, test; no bench, release, schema, upstream, p9, catalog; run task starts the app against the dev server"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.2"
+disposition = "rewritten"
+targets = ["taskfiles/rust.taskfile.yml", "taskfiles/web.taskfile.yml"]
+reason = "same rust task names minus hook:size and hook:audit, run in the build container; web:lint, web:test, web:build added"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.3"
+disposition = "rewritten"
+targets = ["taskfiles/shell.taskfile.yml"]
+reason = "skips installed bundle content under .claude/rules and .claude/skills (PD-21)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.4"
+disposition = "taken"
+targets = ["taskfiles/git.taskfile.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.5"
+disposition = "not-applicable"
+reason = "no docs site and no release flow in U"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.6"
+disposition = "not-applicable"
+reason = "no docs site and no release flow in U"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.7"
+disposition = "rewritten"
+targets = ["taskfiles/coverage.taskfile.yml"]
+reason = "cargo llvm-cov runs in the build container; the HTML-open helper is dropped; the image now carries llvm-tools-preview and a pinned cargo-llvm-cov 0.9.1; `task coverage` ran and exited 0"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.8"
+disposition = "not-applicable"
+reason = "grim-specific: schema, bench, p9, upstream and catalog tasks; U adds gui.taskfile.yml and web.taskfile.yml instead"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.9"
+disposition = "rewritten"
+targets = [".claude/taskfile.yml"]
+reason = "verify, tests (adds scaffold manifest check), lint:links, statusline:install"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.10"
+disposition = "taken"
+targets = [".taskrc.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B2.11"
+disposition = "taken"
+targets = ["taskfile.yml", ".claude/rules/subsystem-taskfiles.md", "AGENTS.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.1"
+disposition = "rewritten"
+targets = ["Cargo.toml"]
+reason = "workspace with the single member src-tauri; one version, edition and license site; grim-sdk as a workspace dependency"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.2"
+disposition = "taken"
+targets = ["Cargo.toml", "src-tauri/Cargo.toml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.3"
+disposition = "taken"
+targets = ["rustfmt.toml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.4"
+disposition = "not-applicable"
+reason = "grim-specific: TUI colour rule, dist and hook profiles, patch submodules"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.5"
+disposition = "taken"
+targets = ["rust-toolchain.toml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.6"
+disposition = "rewritten"
+targets = ["deny.toml"]
+reason = "allow list and policy keys as grimoire; unmaintained = workspace comment names Tauri's GTK3 advisories"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.7"
+disposition = "not-applicable"
+reason = "negative finding: absent in grimoire as well (no .cargo/config.toml, signed-commit enforcement, NOTICE, trivy/zizmor/gitleaks, .editorconfig, ruff config)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.8"
+disposition = "taken"
+targets = ["taskfiles/rust.taskfile.yml", "test/taskfile.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.9"
+disposition = "rewritten"
+targets = [".claude/rules/quality-rust-errors.md", ".claude/rules/quality-rust-exit_codes.md", "src-tauri/src/bridge.rs"]
+reason = "rules carried; the shell has no exit codes of its own, the bridge folds grim-sdk errors into a stderr line and the app stays open"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.10"
+disposition = "not-applicable"
+reason = "grim-specific: TUI colour rule, dist and hook profiles, patch submodules"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.11"
+disposition = "rewritten"
+targets = [".claude/rules/product-tech-strategy.md"]
+reason = "Rust 2024 and Tokio kept; grim-hook deviation dropped; Tauri 2 and plain TypeScript added"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B3.12"
+disposition = "not-applicable"
+reason = "grim-specific: build.rs generators and assets/; src-tauri/build.rs is tauri-build's stock one"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B4.1"
+disposition = "taken"
+targets = ["cog.toml", ".github/workflows/verify-basic.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B4.2"
+disposition = "taken"
+targets = ["taskfiles/git.taskfile.yml", "CONTRIBUTING.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B4.3"
+disposition = "not-applicable"
+reason = "negative finding: absent in grimoire as well (no .cargo/config.toml, signed-commit enforcement, NOTICE, trivy/zizmor/gitleaks, .editorconfig, ruff config)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B4.4"
+disposition = "not-applicable"
+reason = "no release flow in U (PD-20): no dist-workspace.toml, changelog or version-bump ceremony"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B4.5"
+disposition = "rewritten"
+targets = ["CONTRIBUTING.md", "AGENTS.md", ".claude/hooks/pre_push_main_blocker.py"]
+reason = "same branch model; repository and worktree names are U's"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B4.6"
+disposition = "rewritten"
+targets = ["AGENTS.md"]
+reason = "siblings are ../grim-gui-wt-<topic>"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B5.1"
+disposition = "taken"
+targets = ["LICENSE", "Cargo.toml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B5.2"
+disposition = "rewritten"
+targets = [".licenserc.toml"]
+reason = "holder and header text unchanged but rewritten to the hawkeye 7.2 schema (the source's top-level inlineHeader/includes no longer parses); a // style rule covers ts; includes adds src/**/*.ts and vite.config.ts, which now carry the SPDX header (index.html and CSS are not covered by the tool)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B5.3"
+disposition = "not-applicable"
+reason = "negative finding: absent in grimoire as well (no .cargo/config.toml, signed-commit enforcement, NOTICE, trivy/zizmor/gitleaks, .editorconfig, ruff config)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B5.4"
+disposition = "taken"
+targets = ["taskfiles/rust.taskfile.yml", ".github/workflows/verify-basic.yml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B6.1"
+disposition = "taken"
+targets = ["taskfiles/rust.taskfile.yml", ".github/workflows/verify-basic.yml", "deny.toml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B6.2"
+disposition = "not-applicable"
+reason = "grim-specific: cargo audit bin on the hook launcher"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B6.3"
+disposition = "rewritten"
+targets = [".github/workflows/verify-basic.yml"]
+reason = "npm audit --audit-level=high runs in the supply-chain job against the front end lockfile"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B6.4"
+disposition = "not-applicable"
+reason = "negative finding: absent in grimoire as well (no .cargo/config.toml, signed-commit enforcement, NOTICE, trivy/zizmor/gitleaks, .editorconfig, ruff config)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B6.5"
+disposition = "rewritten"
+targets = ["SECURITY.md"]
+reason = "reporting channel kept; guarantees, scope and limitations rewritten for grim-gui"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B6.6"
+disposition = "rewritten"
+targets = [".claude/rules/arch-threat-model.md"]
+reason = "threat model carried in U's form"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B7.1"
+disposition = "not-applicable"
+reason = "no release flow in U (PD-20): no dist-workspace.toml, changelog or version-bump ceremony"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B7.2"
+disposition = "not-applicable"
+reason = "no release flow in U (PD-20): no dist-workspace.toml, changelog or version-bump ceremony"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B7.3"
+disposition = "not-applicable"
+reason = "no release flow in U (PD-20): no dist-workspace.toml, changelog or version-bump ceremony"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B7.4"
+disposition = "not-applicable"
+reason = "grim-specific: packaging/grim"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B8.1"
+disposition = "not-applicable"
+reason = "U has no docs site; README.md is its documentation and docs-quality governs it (B8.4, B8.6)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B8.2"
+disposition = "rewritten"
+targets = ["README.md"]
+reason = "README.md carries the doc_type: readme declaration; no pages, so no doc_tier"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B8.3"
+disposition = "not-applicable"
+reason = "no docs/ directory in U, so no docs.toml"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B8.4"
+disposition = "taken"
+targets = [".claude/skills/docs-quality-reference/checks", ".claude/rules/docs-quality.md", "grimoire.toml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B8.5"
+disposition = "not-applicable"
+reason = "grimoire-only site gates (check_urls, landing_check, theme_check) for a docs site U lacks"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B8.6"
+disposition = "rewritten"
+targets = [".claude/rules/docs-quality.md", ".claude/rules.md"]
+reason = "docs-quality installed as-is from the docs-essentials bundle; docs-style (Grimoire voice) not carried, U has no docs site"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B8.7"
+disposition = "not-applicable"
+reason = "grimoire-only generators (JSON Schemas, CATALOG.md, casts); U generates no reference docs"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.1"
+disposition = "rewritten"
+targets = ["README.md"]
+reason = "sections How it works, Build and run, Test, Project layout, License"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.2"
+disposition = "rewritten"
+targets = ["CONTRIBUTING.md"]
+reason = "layout, commands and test sections written for U"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.3"
+disposition = "taken"
+targets = ["CODE_OF_CONDUCT.md"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.4"
+disposition = "rewritten"
+targets = [".gitattributes"]
+reason = "line-ending and archive blocks kept; src-tauri/icons marked binary; ocx.lock merge=union added; no LFS or conformance paths"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.5"
+disposition = "rewritten"
+targets = [".gitignore"]
+reason = "target, dist, node_modules, src-tauri/gen, test/bin, test/results, lcov.info, claude state and worktree entries"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.6"
+disposition = "not-applicable"
+reason = "negative finding: absent in grimoire as well (no .cargo/config.toml, signed-commit enforcement, NOTICE, trivy/zizmor/gitleaks, .editorconfig, ruff config)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.7"
+disposition = "not-applicable"
+reason = "grim-specific: patch submodules; U has none"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.8"
+disposition = "rewritten"
+targets = ["ocx.toml", "ocx.lock"]
+reason = "pins node 24, cargo-deny, hawkeye, lychee, ruff, shellcheck, shfmt, uv, actionlint; no zot, git-cliff or grim pin: grim comes from the pinned grimoire commit"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.9"
+disposition = "taken"
+targets = ["taplo.toml"]
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.10"
+disposition = "not-applicable"
+reason = "negative finding: absent in grimoire as well (no .cargo/config.toml, signed-commit enforcement, NOTICE, trivy/zizmor/gitleaks, .editorconfig, ruff config)"
+
+[[row]]
+inventory = "testing_and_conventions"
+key = "B9.11"
+disposition = "rewritten"
+targets = ["grimoire.toml", "grimoire.lock"]
+reason = "U installs its own bundles; scripts/ holds only in-container.sh, no catalog or CATALOG.md"
+
+[[deviation]]
+what = "row disposition is per convention, not per file"
+reason = "a `taken` row means the convention it names is present unchanged; it may live inside a file whose `[[file]]` block is `rewritten` because other parts were adapted (for example test classes in `.claude/tests/test_ai_config.py`)."
+
+[[deviation]]
+what = "docs-essentials bundle added beyond the plan's C-037 bundle list"
+reason = "U ships README.md and CONTRIBUTING.md, which the docs-quality rule set governs (R15)."
